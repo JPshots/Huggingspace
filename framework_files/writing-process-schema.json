@@ -1,0 +1,185 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://amazon-review-framework.com/schemas/writing-process.schema.json",
+  "title": "Writing Process",
+  "description": "Framework for the workflow of transforming product knowledge into exceptional reviews",
+  "type": "object",
+  "required": ["process_overview", "critical_pre_planning", "first_draft_success_framework"],
+  "properties": {
+    "process_overview": {
+      "type": "object",
+      "required": ["description", "core_principles", "critical_workflow"],
+      "properties": {
+        "description": { "type": "string" },
+        "core_principles": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+        "critical_workflow": {
+          "type": "object",
+          "properties": {
+            "description": { "type": "string" },
+            "implementation_warning": { "type": "string" },
+            "phases": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["order", "name", "action"],
+                "properties": {
+                  "order": { "type": "integer" },
+                  "name": { "type": "string" },
+                  "action": { "type": "string" },
+                  "dependency_warning": { "type": "string" },
+                  "validation": { "type": "string" },
+                  "implementation": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+                  "reference": { "type": "string" }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "product_adaptation_process": {
+      "type": "object",
+      "properties": {
+        "description": { "type": "string" },
+        "guiding_principles": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+        "adaptation_workflow": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "phase": { "type": "string" },
+              "actions": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+              "outputs": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+            }
+          }
+        }
+      }
+    },
+    "critical_pre_planning": {
+      "type": "object",
+      "required": ["title", "description", "priority", "mandatory_steps"],
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "priority": { "$ref": "../common-definitions.schema.json#/definitions/priority" },
+        "mandatory_steps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["order", "action"],
+            "properties": {
+              "order": { "type": "integer" },
+              "action": { "type": "string" },
+              "guidance": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+              "reference": { "type": "string" },
+              "priority": { "$ref": "../common-definitions.schema.json#/definitions/priority" },
+              "checklist": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+              "validation": { "type": "string" }
+            }
+          }
+        },
+        "completion_verification": {
+          "type": "object",
+          "properties": {
+            "checkboxes": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+          }
+        }
+      }
+    },
+    "first_draft_success_framework": {
+      "type": "object",
+      "required": ["description", "integrated_writing_process"],
+      "properties": {
+        "description": { "type": "string" },
+        "integrated_writing_process": {
+          "type": "object",
+          "properties": {
+            "principle": { "type": "string" },
+            "techniques": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+          }
+        },
+        "section_transitions": {
+          "type": "object",
+          "properties": {
+            "principle": { "type": "string" },
+            "techniques": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+          }
+        },
+        "implementation_guidance": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+      }
+    },
+    "length_optimization_strategy": {
+      "type": "object",
+      "properties": {
+        "description": { "type": "string" },
+        "target_ranges": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "category": { "type": "string" },
+              "word_count": { "type": "string" },
+              "examples": { "type": "string" },
+              "implementation": { "type": "string" }
+            }
+          }
+        },
+        "core_principles": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "principle": { "type": "string" },
+              "description": { "type": "string" },
+              "implementation": {
+                "oneOf": [
+                  { "type": "string" },
+                  { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+                  {
+                    "type": "object",
+                    "additionalProperties": {
+                      "type": "string"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "implementation_guidance": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+      }
+    },
+    "final_polish_process": {
+      "type": "object",
+      "properties": {
+        "description": { "type": "string" },
+        "polish_steps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["order", "action"],
+            "properties": {
+              "order": { "type": "integer" },
+              "action": { "type": "string" },
+              "description": { "type": "string" },
+              "reference": { "type": "string" },
+              "techniques": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+            }
+          }
+        },
+        "final_verification": {
+          "type": "object",
+          "properties": {
+            "description": { "type": "string" },
+            "checklist": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+            "reference": { "type": "string" }
+          }
+        }
+      }
+    },
+    "framework_relationships": {
+      "type": "array",
+      "items": { "$ref": "../common-definitions.schema.json#/definitions/componentReference" }
+    }
+  }
+}

@@ -1,0 +1,389 @@
+{
+  "analysis_categories": [
+    {
+      "name": "physicalCharacteristics",
+      "description": "Visual assessment of product dimensions, materials, and build quality",
+      "questions": [
+        "What are the visible dimensions and proportions relative to common objects in the images?",
+        "What materials and finishes are identifiable from close-up shots?",
+        "Are there any visible quality indicators in the construction or assembly?"
+      ]
+    },
+    {
+      "name": "usageContext",
+      "description": "Understanding how and where the product is used",
+      "questions": [
+        "What environmental context is shown in product usage photos?",
+        "How does the product interact with or fit into its intended space?",
+        "What complementary items or accessories are shown being used with the product?"
+      ]
+    },
+    {
+      "name": "designDetails",
+      "description": "Specific design elements and features visible in images",
+      "questions": [
+        "What control interfaces or adjustment mechanisms are visible?",
+        "How are different components arranged or connected?",
+        "What design choices are evident in the product's aesthetics?"
+      ]
+    },
+    {
+      "name": "qualityIndicators",
+      "description": "Visual cues that suggest product quality or durability",
+      "questions": [
+        "Are there visible manufacturing details that suggest quality level?",
+        "Do seams, joints, or connection points appear robust?",
+        "Are there any visible quality concerns in finish or materials?"
+      ]
+    },
+    {
+      "name": "userInteraction",
+      "description": "How users physically interact with the product",
+      "questions": [
+        "How is the product held, manipulated, or operated in usage images?",
+        "What ergonomic features are visible in the design?",
+        "Are there visible accessibility considerations in the interface design?"
+      ]
+    }
+  ],
+  "visual_verification_checklist": [
+    {
+      "category": "sizeAndScale",
+      "elements": [
+        "Compare to standard objects in frame",
+        "Look for measurement references",
+        "Note relative proportions of components"
+      ]
+    },
+    {
+      "category": "qualityIndicators",
+      "elements": [
+        "Surface finish consistency",
+        "Alignment of parts and seams",
+        "Material quality indicators"
+      ]
+    },
+    {
+      "category": "functionalElements",
+      "elements": [
+        "Identify all visible controls and interfaces",
+        "Note accessibility of common adjustment points",
+        "Examine connection points and ports"
+      ]
+    },
+    {
+      "category": "packagingAssessment",
+      "elements": [
+        "Evaluate packaging materials and quality",
+        "Note protection level for shipping",
+        "Assess unboxing experience design"
+      ]
+    },
+    {
+      "category": "includedComponents",
+      "elements": [
+        "Inventory all visible accessories and parts",
+        "Note quality of included accessories",
+        "Identify any missing but expected components"
+      ]
+    }
+  ],
+  "implementation_guidance": [
+    "Always cross-reference image observations with provided specifications",
+    "Use image analysis to verify or challenge written claims",
+    "Document any discrepancies between images and product descriptions",
+    "Look for unintentional revelations in background or context of images",
+    "Consider both official product photos and customer-submitted images"
+  ],
+  "red_flags_checklist": [
+    "Inconsistent scaling across different images",
+    "Missing or obscured important product features",
+    "Artificially enhanced or modified product appearance",
+    "Misleading context or usage scenarios",
+    "Lack of detail in critical areas"
+  ],
+  "dimension_estimation_techniques": {
+    "description": "Methods for making accurate size and proportion assessments from images",
+    "techniques": [
+      {
+        "name": "referenceObjectComparison",
+        "description": "Using common objects in frame to estimate size",
+        "implementation": [
+          "Identify common objects with known dimensions (coins, credit cards, phones)",
+          "Compare product dimensions relative to reference objects",
+          "Calculate approximate measurements based on known reference dimensions"
+        ],
+        "example": "The device appears approximately 2.5 credit cards in width, suggesting a dimension of roughly 3.75 inches."
+      },
+      {
+        "name": "humanHandScaling",
+        "description": "Using human hands in images to gauge product size",
+        "implementation": [
+          "Note how the product is held or manipulated by hands",
+          "Compare to average hand dimensions (adult palm width ~3.5 inches)",
+          "Assess whether product appears small, medium, or large in relation to typical hands"
+        ],
+        "example": "The device is completely obscured within an average adult palm, indicating a compact size of 3 inches or less."
+      },
+      {
+        "name": "environmentalContextAnalysis",
+        "description": "Using surrounding environment to estimate size",
+        "implementation": [
+          "Identify standard fixtures or furniture in images (countertops, desk surfaces)",
+          "Note how much space product occupies in standard environments",
+          "Compare to typical dimensions of environmental elements"
+        ],
+        "example": "The appliance occupies approximately 1/4 of a standard countertop depth, suggesting a depth of 6-7 inches."
+      }
+    ],
+    "accuracy_guidelines": [
+      "Express estimates as ranges rather than precise measurements",
+      "Use multiple estimation techniques and cross-reference results",
+      "Note confidence level in estimations (high, medium, low)",
+      "Always seek confirmation of critical dimensions from specifications"
+    ]
+  },
+  "material_identification_framework": {
+    "description": "System for identifying and assessing materials from visual cues",
+    "material_indicators": [
+      {
+        "material": "Metal",
+        "visual_cues": [
+          "Reflective properties and highlights",
+          "Visible machining patterns or brushed finishes",
+          "Cold/industrial appearance or texture"
+        ],
+        "quality_assessment": [
+          "Consistent finish without visible imperfections",
+          "Precision of machined edges and corners",
+          "Uniformity of color and surface treatment"
+        ]
+      },
+      {
+        "material": "Plastic",
+        "visual_cues": [
+          "Surface texture (glossy, matte, textured)",
+          "Visible seams or injection molding lines",
+          "Light diffusion characteristics"
+        ],
+        "quality_assessment": [
+          "Consistency of color throughout parts",
+          "Precision of seam alignment",
+          "Absence of flash or excess material at edges",
+          "Thickness consistency at edges"
+        ]
+      },
+      {
+        "material": "Glass/Ceramic",
+        "visual_cues": [
+          "Transparent or translucent properties",
+          "Surface reflections and light interaction",
+          "Visible thickness at edges"
+        ],
+        "quality_assessment": [
+          "Consistency of thickness",
+          "Absence of bubbles or inclusions",
+          "Precision of edge finishing"
+        ]
+      },
+      {
+        "material": "Fabric/Textiles",
+        "visual_cues": [
+          "Weave pattern and texture",
+          "Draping characteristics",
+          "Surface uniformity and finish"
+        ],
+        "quality_assessment": [
+          "Evenness of stitching and seams",
+          "Consistent tension in fabric panels",
+          "Quality of edge finishing techniques"
+        ]
+      }
+    ],
+    "implementation_guidance": [
+      "Look for material transitions and joints to identify different components",
+      "Pay particular attention to high-stress areas for quality assessment",
+      "Note when materials don't match across similar components",
+      "Consider functional appropriateness of identified materials"
+    ]
+  },
+  "user_interface_analysis": {
+    "description": "Framework for evaluating visible interface elements from images",
+    "interface_elements": [
+      {
+        "element_type": "Physical Controls",
+        "assessment_criteria": [
+          "Visibility and differentiation of controls",
+          "Intuitive placement and arrangement",
+          "Size and spacing appropriate for target users",
+          "Visible feedback mechanisms"
+        ]
+      },
+      {
+        "element_type": "Digital Displays",
+        "assessment_criteria": [
+          "Readability in different lighting conditions",
+          "Information organization and hierarchy",
+          "Color contrast and visibility",
+          "Screen size relative to information density"
+        ]
+      },
+      {
+        "element_type": "Indicators and Markers",
+        "assessment_criteria": [
+          "Clarity of status indicators",
+          "Visibility from normal usage positions",
+          "Intuitive use of colors or symbols",
+          "Consistency across different functions"
+        ]
+      },
+      {
+        "element_type": "Connection Ports/Interfaces",
+        "assessment_criteria": [
+          "Accessibility of connection points",
+          "Clarity of port labeling or identification",
+          "Logical grouping of related ports",
+          "Protection or durability features"
+        ]
+      }
+    ],
+    "usability_inference_guidelines": [
+      "Note whether controls appear to require one or two hands",
+      "Assess whether text/icons would be visible to users with visual impairments",
+      "Consider whether interface could be operated without looking directly at it",
+      "Evaluate if interface appears intimidating or welcoming to new users"
+    ]
+  },
+  "contextual_usage_analysis": {
+    "description": "Framework for extracting usage insights from contextual images",
+    "context_categories": [
+      {
+        "category": "Environmental Context",
+        "analysis_focus": [
+          "Lighting conditions shown in usage scenarios",
+          "Indoor vs. outdoor usage implications",
+          "Space requirements for effective use",
+          "Environmental constraints or requirements"
+        ]
+      },
+      {
+        "category": "User Demographic Context",
+        "analysis_focus": [
+          "Apparent age ranges of users in imagery",
+          "Physical capabilities implied by usage postures",
+          "Professional vs. casual usage scenarios",
+          "Family or group usage vs. individual use"
+        ]
+      },
+      {
+        "category": "Activity Context",
+        "analysis_focus": [
+          "Types of activities product is shown supporting",
+          "Activity intensity levels (casual, active, professional)",
+          "Multi-tasking vs. dedicated attention requirements",
+          "Duration implications of shown activities"
+        ]
+      },
+      {
+        "category": "Social Context",
+        "analysis_focus": [
+          "Individual vs. group usage scenarios",
+          "Collaborative vs. personal use implications",
+          "Public vs. private usage environments",
+          "Social interaction facilitation or implications"
+        ]
+      }
+    ],
+    "implementation_guidance": [
+      "Consider whether shown contexts match likely real-world usage",
+      "Note any obvious omissions in contextual representation",
+      "Identify any specialized environment requirements implied by images",
+      "Consider whether product appears versatile across different contexts"
+    ]
+  },
+  "image_integration": {
+    "description": "Framework for effectively incorporating and referencing images in review content",
+    "reference_principles": [
+      {
+        "name": "specificity",
+        "description": "Direct references to visual details in images",
+        "examples": [
+          "As shown in image 2, the textured grip pattern extends 3 inches along the handle",
+          "Note the size comparison with a quarter in image 1 for scale"
+        ]
+      },
+      {
+        "name": "contextEnhancement",
+        "description": "Use images to strengthen written points",
+        "examples": [
+          "The slight discoloration visible in image 3 demonstrates the wear pattern",
+          "Image 4 highlights the seamless connection points discussed above"
+        ]
+      }
+    ],
+    "integration_workflow": [
+      {
+        "step": "Pre-writing Image Planning",
+        "actions": [
+          "Identify key visual elements requiring documentation",
+          "Plan image sequence to support review flow",
+          "List specific details to highlight in each image"
+        ]
+      },
+      {
+        "step": "Content Synchronization",
+        "actions": [
+          "Reference images near relevant text sections",
+          "Use consistent image numbering throughout"
+        ]
+      }
+    ]
+  },
+  "comparative_visual_analysis": {
+    "description": "Framework for comparing product appearance with competitors or alternatives",
+    "comparison_dimensions": [
+      {
+        "dimension": "Size and Form Factor",
+        "analysis_focus": [
+          "Relative dimensions compared to alternatives",
+          "Different form factor approaches to similar functions",
+          "Space efficiency differences",
+          "Portability and storage implications"
+        ]
+      },
+      {
+        "dimension": "Design Language",
+        "analysis_focus": [
+          "Overall aesthetic approach differences",
+          "Target demographic implications of design",
+          "Contemporary vs. classic design approaches",
+          "Brand identity consistency or differentiation"
+        ]
+      },
+      {
+        "dimension": "Interface Approach",
+        "analysis_focus": [
+          "Physical vs. digital control paradigms",
+          "Simplicity vs. complexity in interface design",
+          "Accessibility considerations in different approaches",
+          "Learning curve implications of different interfaces"
+        ]
+      },
+      {
+        "dimension": "Material and Construction",
+        "analysis_focus": [
+          "Material quality and selection differences",
+          "Construction method and durability implications",
+          "Premium vs. economical material choices",
+          "Maintenance and aging implications"
+        ]
+      }
+    ],
+    "implementation_guidance": [
+      "Use side-by-side comparisons when possible",
+      "Note both objective and subjective differences",
+      "Consider different user priorities when assessing differences",
+      "Avoid purely aesthetic judgments without functional context"
+    ]
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://amazon-review-framework.com/schemas/question-framework.schema.json",
+  "title": "Question Framework",
+  "description": "Strategic question framework for gathering comprehensive product information",
+  "type": "object",
+  "required": ["question_framework", "contextual_gaps_framework", "question_prioritization_framework"],
+  "properties": {
+    "question_framework": {
+      "type": "object",
+      "required": ["description", "core_principles"],
+      "properties": {
+        "description": { "type": "string" },
+        "workflow_integration": { "type": "string" },
+        "mandatory_requirement": {
+          "type": "object",
+          "properties": {
+            "rule": { "type": "string" },
+            "procedure": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+            "guidance": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+          }
+        },
+        "core_principles": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "definition", "implementation"],
+            "properties": {
+              "name": { "type": "string" },
+              "definition": { "type": "string" },
+              "implementation": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+            }
+          }
+        }
+      }
+    },
+    "contextual_gaps_framework": {
+      "type": "object",
+      "required": ["description", "gap_categories", "process"],
+      "properties": {
+        "description": { "type": "string" },
+        "gap_categories": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "definition", "examples", "priority"],
+            "properties": {
+              "name": { "type": "string" },
+              "definition": { "type": "string" },
+              "examples": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+              "priority": { "$ref": "../common-definitions.schema.json#/definitions/priority" }
+            }
+          }
+        },
+        "process": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+      }
+    },
+    "question_prioritization_framework": {
+      "type": "object",
+      "required": ["description", "scoring_criteria", "selection_process"],
+      "properties": {
+        "description": { "type": "string" },
+        "scoring_criteria": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "description", "scoring_guide"],
+            "properties": {
+              "name": { "type": "string" },
+              "description": { "type": "string" },
+              "scoring_guide": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["value", "level"],
+                  "properties": {
+                    "value": { "type": "integer" },
+                    "level": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "selection_process": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+      }
+    },
+    "information_tracking_system": {
+      "type": "object",
+      "properties": {
+        "description": { "type": "string" },
+        "categories": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "tracking_elements"],
+            "properties": {
+              "name": { "type": "string" },
+              "tracking_elements": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+            }
+          }
+        },
+        "implementation_guidance": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+      }
+    },
+    "strategic_question_library": {
+      "type": "object",
+      "properties": {
+        "description": { "type": "string" },
+        "categories": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "questions": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+            }
+          }
+        }
+      }
+    },
+    "framework_relationships": {
+      "type": "array",
+      "items": { "$ref": "../common-definitions.schema.json#/definitions/componentReference" }
+    }
+  }
+}

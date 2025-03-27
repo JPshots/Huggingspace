@@ -1,0 +1,303 @@
+{
+  "name": "Amazon Review Framework",
+  "version": "2.0.0",
+  "description": "Comprehensive system for creating exceptional product reviews to qualify for the Amazon Vine program",
+  "components": [
+    {
+      "name": "review-strategy.json",
+      "description": "Foundation that establishes goals, principles, and success metrics",
+      "role": "Provides the strategic vision and value drivers for all reviews"
+    },
+    {
+      "name": "question-framework.json",
+      "description": "Methodologies for gathering product information through strategic questioning",
+      "role": "Ensures comprehensive product understanding before writing begins"
+    },
+    {
+      "name": "keyword-strategy.json",
+      "description": "Techniques for incorporating search-optimized terms naturally throughout reviews",
+      "role": "Increases review discoverability while maintaining authentic voice"
+    },
+    {
+      "name": "content-structure.json",
+      "description": "Organization templates for creating logical, engaging review structures",
+      "role": "Provides consistent section frameworks adapted to product types"
+    },
+    {
+      "name": "personality-balance.json",
+      "description": "Guidelines for balancing informational content with engaging personality",
+      "role": "Ensures reviews are both informative and engaging"
+    },
+    {
+      "name": "writing-process.json",
+      "description": "Step-by-step workflow from preparation to final submission",
+      "role": "Orchestrates the entire review creation process"
+    },
+    {
+      "name": "personality-techniques.json",
+      "description": "Specific creative approaches for adding personality to reviews",
+      "role": "Provides techniques for creating engaging, memorable content"
+    },
+    {
+      "name": "thematic-frameworks.json",
+      "description": "Approaches for enhancing reviews with themes and narrative structures",
+      "role": "Provides methods for creating distinctive, memorable reviews"
+    },
+    {
+      "name": "narrative-sensory.json",
+      "description": "Frameworks for incorporating story elements and sensory details",
+      "role": "Enhances review engagement and vividness"
+    },
+    {
+      "name": "product-analysis.json",
+      "description": "Frameworks for systematic testing and evaluation of products",
+      "role": "Ensures thorough and methodical product assessment"
+    },
+    {
+      "name": "image-analysis.json",
+      "description": "Framework for extracting valuable information from product images",
+      "role": "Maximizes value from visual product documentation"
+    },
+    {
+      "name": "quality-assessment.json",
+      "description": "Assessment frameworks and improvement processes for review excellence",
+      "role": "Provides verification systems to ensure review quality"
+    },
+    {
+      "name": "redundancy-verification.json",
+      "description": "Process for identifying and eliminating unnecessary repetition",
+      "role": "Ensures content efficiency and readability"
+    },
+    {
+      "name": "examples-templates.json",
+      "description": "Implementation examples and templates for reference",
+      "role": "Provides concrete examples of framework implementation"
+    }
+  ],
+  "workflow": {
+    "phases": [
+      {
+        "name": "Information Gathering",
+        "steps": [
+          {
+            "action": "Strategic Question Planning",
+            "reference": "question-framework.json > contextual_gaps_framework",
+            "activities": [
+              "Identify information gaps using contextual gaps framework",
+              "Prioritize questions using scoring criteria",
+              "Prepare comprehensive initial question set"
+            ]
+          },
+          {
+            "action": "Keyword Research",
+            "reference": "keyword-strategy.json > implementation_process > pre_review_keyword_brainstorm",
+            "activities": [
+              "Identify primary product category keywords",
+              "List feature-specific and comparison keywords",
+              "Map compatibility and problem-solution terminology"
+            ]
+          },
+          {
+            "action": "Image Analysis",
+            "reference": "image-analysis.json > analysis_categories",
+            "activities": [
+              "Analyze physical characteristics from images",
+              "Assess usage context from visual documentation",
+              "Evaluate design details and visual quality indicators"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Pre-Writing Planning",
+        "steps": [
+          {
+            "action": "Content Structure Selection",
+            "reference": "content-structure.json > review_structure",
+            "activities": [
+              "Select appropriate structure based on product complexity",
+              "Determine required and optional sections",
+              "Plan section organization for logical information flow"
+            ]
+          },
+          {
+            "action": "Personality Balance Determination",
+            "reference": "personality-balance.json > content_ratios",
+            "activities": [
+              "Set baseline personality ratio for product category",
+              "Adjust ratios for specific section types",
+              "Select appropriate personality techniques"
+            ]
+          },
+          {
+            "action": "Creative Technique Planning",
+            "reference": "thematic-frameworks.json > theme_discovery",
+            "activities": [
+              "Identify potential thematic approaches",
+              "Select narrative structures for experiential content",
+              "Plan sensory detail integration"
+            ]
+          },
+          {
+            "action": "Complete Pre-Writing Checklist",
+            "reference": "writing-process.json > critical_pre_planning",
+            "activities": [
+              "Verify all pre-writing requirements are met",
+              "Document section-specific strategy decisions",
+              "Prepare initial content framework"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Content Creation",
+        "steps": [
+          {
+            "action": "Integrated Drafting",
+            "reference": "writing-process.json > first_draft_success_framework",
+            "activities": [
+              "Write with balanced information and personality from the start",
+              "Front-load factual content before adding personality",
+              "Implement strategic transitions between sections"
+            ]
+          },
+          {
+            "action": "Apply Section-Specific Guidelines",
+            "reference": "content-structure.json > core_elements",
+            "activities": [
+              "Follow purpose-specific guidelines for each section",
+              "Implement appropriate formatting standards",
+              "Maintain logical flow between sections"
+            ]
+          },
+          {
+            "action": "Implement Strategic Keywords",
+            "reference": "keyword-strategy.json > placement_strategy",
+            "activities": [
+              "Place keywords at high-impact locations",
+              "Use natural integration techniques",
+              "Verify keyword distribution and density"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Quality Assurance",
+        "steps": [
+          {
+            "action": "Redundancy Check",
+            "reference": "redundancy-verification.json > implementation_process",
+            "activities": [
+              "Identify and eliminate unnecessary repetition",
+              "Ensure sections maintain specialized purposes",
+              "Transform necessary repetition to add new dimensions"
+            ]
+          },
+          {
+            "action": "Authenticity Verification",
+            "reference": "personality-balance.json > authentic_voice_guidelines",
+            "activities": [
+              "Scan for marketing-style language patterns",
+              "Verify personal experiences are specific and credible",
+              "Ensure enthusiasm matches actual experience"
+            ]
+          },
+          {
+            "action": "Final Verification",
+            "reference": "quality-assessment.json > final_verification_checklist",
+            "activities": [
+              "Verify all required elements are present",
+              "Check information/personality balance",
+              "Ensure review meets all quality criteria"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Continuous Improvement",
+        "steps": [
+          {
+            "action": "Review Assessment",
+            "reference": "quality-assessment.json > quality_assessment_framework",
+            "activities": [
+              "Evaluate review against success metrics",
+              "Identify areas of excellence and improvement",
+              "Document specific quality enhancement opportunities"
+            ]
+          },
+          {
+            "action": "Process Optimization",
+            "reference": "quality-assessment.json > review_reflection",
+            "activities": [
+              "Identify workflow improvements",
+              "Document reusable techniques",
+              "Update framework components as needed"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ai_role": {
+    "primary_role": "YOU (the AI) are the primary writer, creating a framework-based review using the human's input",
+    "workflow_clarification": "The human provides authentic product experiences and observations; YOU craft these into a complete review",
+    "correct_understanding": [
+      "The human provides authentic product experiences and observations as input",
+      "YOU are the primary writer, applying the framework to create a well-structured review",
+      "YOU must not fabricate core experiences, especially negative attributes not mentioned by the human",
+      "YOU may include relevant factual information (example: specs, materials, features) even if not explicitly mentioned by the human, as long as it is credible and accurate",
+      "The final review should reflect the general premise and substance of what the human shared"
+    ],
+    "creative_permissions": [
+      {
+        "area": "Opening Hook",
+        "permission": "Enhanced narrative is encouraged if it makes the review more compelling without changing the message or being misleading",
+        "example": "Crafting a vivid story-based introduction that captures attention while remaining true to the experience"
+      },
+      {
+        "area": "Tips and Advice",
+        "permission": "YOU may add helpful tips and advice even if not explicitly mentioned by the human",
+        "example": "Including practical usage suggestions, maintenance recommendations, or compatibility notes based on product knowledge"
+      },
+      {
+        "area": "Stylistic Elements",
+        "permission": "Small harmless anecdotal fabrications, exaggerations, and obvious jokes are acceptable",
+        "example": "Adding humorous exaggerations for effect while ensuring they don't mislead about product functionality"
+      },
+      {
+        "area": "Boundary",
+        "restriction": "The key constraint is not to mislead readers or generate content far beyond what the human's input suggests",
+        "example": "Avoid inventing specific negative experiences, technical specifications, or comparative claims not supported by human input"
+      }
+    ],
+    "incorrect_understanding": [
+      "Creating content that contradicts or fabricates experiences the human didn't mention",
+      "Merely analyzing the human's input without creating a complete, structured review",
+      "Treating the human's input as a final draft that only needs minor editing",
+      "Ignoring the human's authentic experiences and product observations"
+    ],
+    "correct_process": [
+      {
+        "order": 1,
+        "action": "YOU carefully review the human's input to understand their authentic product experiences"
+      },
+      {
+        "order": 2,
+        "action": "YOU ask clarifying questions if important details are missing"
+      },
+      {
+        "order": 3,
+        "action": "YOU apply the framework to plan an effective review structure"
+      },
+      {
+        "order": 4,
+        "action": "YOU create a complete review that presents the human's experiences in a framework-optimized format"
+      },
+      {
+        "order": 5,
+        "action": "YOU ensure the review accurately represents the human's experiences while meeting all framework quality standards"
+      }
+    ],
+    "important_note": "The human's product experiences are your source material - you shouldn't invent core content they didn't mention. However, you have creative freedom in how you structure and present that content following the framework."
+  }
+}

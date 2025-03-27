@@ -1,0 +1,353 @@
+{
+  "review_structure": {
+    "description": "Essential structural organization for effective Amazon reviews",
+    "core_elements": [
+      {
+        "name": "amazonTitle",
+        "required": true,
+        "description": "Short, searchable, benefit-focused title (under 60 characters)",
+        "purpose": "Attracts attention in search results and communicates core value",
+        "keyword_implementation": "keyword-strategy.json > placement_strategy > high_impact_placements",
+        "guidelines": [
+          "Keep under 60 characters",
+          "Include 1-2 primary keywords",
+          "Focus on primary benefit or outcome",
+          "Use action-oriented language when possible"
+        ],
+        "examples_reference": "examples-templates.json > titles > amazon_titles"
+      },
+      {
+        "name": "bodyHeader",
+        "required": true,
+        "description": "Creative header with decorative formatting",
+        "purpose": "Expands on title and sets thematic tone for review",
+        "keyword_implementation": "keyword-strategy.json > placement_strategy > high_impact_placements",
+        "guidelines": [
+          "Can be longer and more descriptive than Amazon title",
+          "Keep under 100-150 characters to ensure it fits on one line",
+          "Should expand on the main benefit with more detail",
+          "Uses decorative formatting that takes minimal vertical space"
+        ],
+        "examples_reference": "examples-templates.json > titles > body_headers"
+      },
+      {
+        "name": "openingNarrative",
+        "required": true,
+        "description": "Personal experience/incident that hooks reader",
+        "purpose": "Creates immediate engagement and establishes authenticity",
+        "guidelines": [
+          "Begin with specific incident or experience",
+          "Use vivid, sensory language",
+          "Establish personal connection to product",
+          "Introduce theme if using thematic approach"
+        ],
+        "examples_reference": "examples-templates.json > section_examples > opening_narratives"
+      },
+      {
+        "name": "experientialSection",
+        "required": true,
+        "description": "Real-world applications and experiences",
+        "purpose": "Provides authentic usage context and practical insights",
+        "guidelines": [
+          "Document specific usage scenarios",
+          "Include unexpected discoveries or applications",
+          "Describe integration into daily routines",
+          "Balance information and personality"
+        ],
+        "examples_reference": "examples-templates.json > section_examples > experiential_sections"
+      },
+      {
+        "name": "verdict",
+        "required": true,
+        "description": "Concise final assessment",
+        "purpose": "Provides clear recommendation and purchase guidance",
+        "guidelines": [
+          "Summarize key value proposition",
+          "Balance strengths and limitations",
+          "Identify ideal user scenarios",
+          "Include price-value assessment",
+          "Tie back to opening theme if applicable"
+        ],
+        "examples_reference": "examples-templates.json > section_examples > verdict_sections"
+      },
+      {
+        "name": "evaluationSection",
+        "required": false,
+        "description": "Evaluation of product strengths and limitations",
+        "purpose": "Provides balanced assessment of product capabilities",
+        "usage_guidance": "Recommended for products with multiple distinct features; can be omitted for very simple products where including would create redundancy",
+        "guidelines": [
+          "Can be structured as traditional PROS/CONS or with creative alternatives",
+          "Balance positive and negative aspects",
+          "Front-load factual information before personality",
+          "Add personality to 30-40% of list items"
+        ],
+        "examples_reference": "examples-templates.json > section_examples > evaluation_sections"
+      },
+      {
+        "name": "audienceSection",
+        "required": false,
+        "description": "Identifies ideal and non-ideal users",
+        "purpose": "Helps readers self-identify whether product meets their needs",
+        "usage_guidance": "Recommended for products with specific use cases; can be omitted for universal products or when including would be redundant with other sections",
+        "guidelines": [
+          "Identify specific user profiles or scenarios",
+          "Include both ideal and non-ideal users",
+          "Focus on use cases rather than demographics",
+          "Connect to specific product features"
+        ],
+        "examples_reference": "examples-templates.json > section_examples > audience_sections"
+      },
+      {
+        "name": "practicalAdvice",
+        "required": false,
+        "description": "Experience-based advice and usage tips",
+        "purpose": "Provides actionable guidance from personal experience",
+        "usage_guidance": "Include only when you have unique usage tips not covered elsewhere in the review",
+        "guidelines": [
+          "Focus on discoveries not in product documentation",
+          "Include workarounds for limitations",
+          "Share efficiency or effectiveness tips",
+          "Provide maintenance or longevity advice"
+        ],
+        "examples_reference": "examples-templates.json > section_examples > practical_advice_sections"
+      }
+    ],
+    "optional_custom_elements": {
+      "description": "For complex products requiring additional specialized content",
+      "guidance": [
+        "Create custom sections based on product-specific needs and testing experience",
+        "Each custom section should provide unique value not covered by other sections",
+        "Custom sections should follow the same formatting conventions as standard sections",
+        "Maintain appropriate personality/information balance in custom sections"
+      ],
+      "example_categories": [
+        "Technical details section for complex electronics",
+        "Compatibility information section for ecosystem products",
+        "Performance testing results section for comparative products",
+        "Learning curve assessment section for complex tools"
+      ]
+    }
+  },
+  "section_naming": {
+    "description": "Comprehensive guide to creating engaging section headers",
+    "fundamental_principles": [
+      "Section titles should match the product, theme, and your personal style",
+      "There are no fixed 'standard' section names - innovate based on what best serves readers",
+      "Section titles should clearly communicate purpose while showcasing creativity",
+      "Consider how all section names work together to create a cohesive review"
+    ],
+    "formatting_standards": {
+      "format": "ALL CAPS with symbol prefix",
+      "examples": [
+        ">> THE VERDICT",
+        "** THE SPECS",
+        "-- PROS",
+        "-- CONS",
+        "*** TIPS & ADVICE",
+        ">> PERFECT FOR",
+        ">> NOT IDEAL FOR"
+      ],
+      "implementation": "Place prefix directly before section header text in ALL CAPS"
+    },
+    "section_name_options": {
+      "experiential_sections": {
+        "purpose": "Document real-world usage experiences",
+        "options": [
+          "DAILY USE",
+          "FIELD NOTES",
+          "REAL-WORLD TESTS",
+          "IN THE TRENCHES",
+          "EVERYDAY ADVENTURES",
+          "HANDS-ON EXPERIENCE",
+          "THE DAILY EXPERIMENTS"
+        ]
+      },
+      "technical_sections": {
+        "purpose": "Present specifications and performance details",
+        "options": [
+          "THE SPECS",
+          "THE NITTY GRITTY",
+          "UNDER THE HOOD",
+          "BY THE NUMBERS",
+          "TECH DISSECTION",
+          "INNER WORKINGS"
+        ]
+      },
+      "evaluation_sections": {
+        "purpose": "Assess strengths and limitations",
+        "options": [
+          "PROS & CONS",
+          "HIGHS & LOWS",
+          "VICTORIES & DEFEATS",
+          "HIGHLIGHTS & HEADACHES",
+          "STRENGTHS & STRUGGLES",
+          "LABORATORY OBSERVATIONS"
+        ]
+      },
+      "practical_sections": {
+        "purpose": "Provide actionable advice from experience",
+        "options": [
+          "TIPS & TRICKS",
+          "INSIDER SECRETS",
+          "PRO STRATEGIES",
+          "SURVIVAL GUIDE",
+          "POWER MOVES",
+          "USAGE HACKS"
+        ]
+      },
+      "conclusion_sections": {
+        "purpose": "Deliver final assessment and recommendation",
+        "options": [
+          "THE VERDICT",
+          "FINAL WORD",
+          "CLOSING ARGUMENTS",
+          "THE BOTTOM LINE",
+          "ULTIMATE ASSESSMENT",
+          "FINAL THOUGHTS",
+          "RESEARCH CONCLUSIONS"
+        ]
+      }
+    },
+    "thematic_frameworks": {
+      "description": "Creating consistent themed section headers throughout a review",
+      "reference": "thematic-frameworks.json > themed_section_frameworks",
+      "implementation": [
+        "Choose a metaphorical domain that naturally connects to the product",
+        "Develop a complete set of themed section headers for consistency",
+        "Ensure themed headers still clearly communicate section purposes"
+      ],
+      "theme_generation_questions": [
+        "What metaphorical domain naturally connects to this product's function?",
+        "What unexpected comparison came to mind during product testing?",
+        "What storytelling framework would make this product's review memorable?"
+      ]
+    }
+  },
+  "content_organization": {
+    "description": "Core principles for effective information structuring",
+    "information_flow": [
+      "Structure sections to create logical progression of information",
+      "Begin with engaging personal experience to establish context",
+      "Follow with detailed usage experiences that demonstrate product value",
+      "Include evaluation sections that balance strengths and limitations",
+      "Add audience identification to help readers determine fit",
+      "Include practical advice based on personal experience",
+      "End with clear verdict that summarizes overall assessment"
+    ],
+    "formatting_guidance": {
+      "paragraphs": "Brief, scannable (3-5 sentences)",
+      "lists_enhancement": {
+        "principle": "Add personality to 30-40% of list items",
+        "implementation": "Always place factual content first, personality second",
+        "examples": {
+          "basic": "Clear progress indicators for each battery position",
+          "enhanced": "Clear progress indicators for each battery position (no cryptic blinking patterns to decipher)"
+        }
+      }
+    },
+    "redundancy_prevention": {
+      "principles": [
+        "Each section should serve a unique informational purpose with minimal overlap",
+        "Information should generally appear in its most optimal section only",
+        "Later mentions of key points should add new dimensions rather than repeating",
+        "Paragraph content, list items, and tips sections should contain distinct information types"
+      ],
+      "reference": "redundancy-verification.json > implementation_process",
+      "note": "This section provides structure-specific guidance, while the comprehensive implementation process is centralized in redundancy-verification.json",
+      "strategic_exceptions": [
+        "Key information may be restated when doing so significantly enhances clarity",
+        "Critical safety or compatibility information may appear in multiple sections when warranted",
+        "Complex technical points may be introduced in technical sections then reframed in simpler terms elsewhere"
+      ]
+    }
+  },
+  "product_specific_sections": {
+    "description": "Guidelines for adapting review sections to specific product categories",
+    "adaptation_principles": [
+      "Standard review structure should be modified based on product-specific needs",
+      "Create custom sections that highlight unique aspects of product category",
+      "Rename standard sections to align with product terminology when appropriate",
+      "Balance consistency with customization for optimal reader experience"
+    ],
+    "section_adaptation_process": [
+      {
+        "step": "Identify unique attributes of product category"
+      },
+      {
+        "step": "Determine which standard sections require modification"
+      },
+      {
+        "step": "Design specialized sections to highlight category-specific aspects"
+      },
+      {
+        "step": "Ensure all required elements are still covered"
+      },
+      {
+        "step": "Maintain consistent formatting and style conventions"
+      }
+    ],
+    "specialized_section_examples_reference": "examples-templates.json > product_specific_sections",
+    "implementation_guidance": [
+      "Create product-specific sections only when they add unique value",
+      "Maintain consistent formatting between standard and specialized sections",
+      "Ensure specialized sections follow the same information/personality balance principles",
+      "Use specialized vocabulary where appropriate but explain terms when necessary"
+    ]
+  },
+  "image_integration": {
+    "description": "Framework for effectively incorporating and referencing images in review content",
+    "reference_principles": [
+      {
+        "name": "specificity",
+        "description": "Direct references to visual details in images",
+        "examples_reference": "examples-templates.json > image_integration > specificity_examples"
+      },
+      {
+        "name": "contextEnhancement",
+        "description": "Use images to strengthen written points",
+        "examples_reference": "examples-templates.json > image_integration > context_enhancement_examples"
+      }
+    ],
+    "implementation_workflow": [
+      {
+        "step": "Pre-writing Image Planning",
+        "actions": [
+          "Identify key visual elements requiring documentation",
+          "Plan image sequence to support review flow",
+          "List specific details to highlight in each image"
+        ]
+      },
+      {
+        "step": "Content Synchronization",
+        "actions": [
+          "Reference images near relevant text sections",
+          "Use consistent image numbering throughout"
+        ]
+      }
+    ],
+    "reference": "image-analysis.json"
+  },
+  "mobile_considerations": {
+    "description": "Special formatting considerations for mobile device readability",
+    "guidelines": [
+      "Test text-based formatting on mobile devices before standardizing",
+      "Use line breaks strategically for mobile reading",
+      "Ensure section headers are immediately visible without scrolling",
+      "Favor shorter paragraphs (2-3 sentences) for mobile readability",
+      "Use consistent spacing for improved mobile scannability"
+    ],
+    "mobile_specific_adjustments": [
+      "Avoid extremely wide decorative elements that might wrap awkwardly",
+      "Use dividers that display well at narrower widths",
+      "Keep section prefixes brief for better mobile display",
+      "Test formatting on multiple screen sizes for optimal display"
+    ],
+    "implementation_guidance": [
+      "When in doubt, choose simplicity for better cross-device compatibility",
+      "Focus on clear visual hierarchy that works at any screen width",
+      "Prioritize readability over decorative elements",
+      "Test all your reviews on mobile before submission"
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://amazon-review-framework.com/schemas/product-analysis.schema.json",
+    "title": "Product Analysis",
+    "description": "Framework for systematically testing and evaluating products for reviews",
+    "type": "object",
+    "required": ["product_testing_matrices", "content_quality_analysis"],
+    "properties": {
+      "product_testing_matrices": {
+        "type": "object",
+        "required": ["description", "implementation_principles", "matrix_creation_process"],
+        "properties": {
+          "description": { "type": "string" },
+          "implementation_principles": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+          "matrix_creation_process": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+          "example_matrices": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "category": { "type": "string" },
+                "testing_dimensions": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "dimension": { "type": "string" },
+                      "examples": { "type": "string" },
+                      "implementation": { "type": "string" }
+                    }
+                  }
+                },
+                "documentation_recommendations": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+              }
+            }
+          },
+          "integration_with_review_process": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+        }
+      },
+      "content_quality_analysis": {
+        "type": "object",
+        "required": ["description", "strengths", "areas_for_enhancement"],
+        "properties": {
+          "description": { "type": "string" },
+          "strengths": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "category": { "type": "string" },
+                "impact": { "type": "string" },
+                "description": { "type": "string" },
+                "replication_strategy": { "type": "string" }
+              }
+            }
+          },
+          "areas_for_enhancement": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "category": { "type": "string" },
+                "priority": { "type": "string" },
+                "description": { "type": "string" },
+                "improvement_strategy": { "type": "string" }
+              }
+            }
+          }
+        }
+      },
+      "framework_relationships": {
+        "type": "array",
+        "items": { "$ref": "../common-definitions.schema.json#/definitions/componentReference" }
+      }
+    }
+  }

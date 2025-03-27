@@ -1,0 +1,105 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://amazon-review-framework.com/schemas/quality-assessment.schema.json",
+    "title": "Quality Assessment",
+    "description": "Framework for assessing and improving review quality",
+    "type": "object",
+    "required": ["quality_assessment_framework", "scoring_system"],
+    "properties": {
+      "quality_assessment_framework": {
+        "type": "object",
+        "required": ["description", "assessment_criteria"],
+        "properties": {
+          "description": { "type": "string" },
+          "integration_sequence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "step": { "type": "string" }
+              }
+            }
+          },
+          "assessment_criteria": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["criterion", "description"],
+              "properties": {
+                "criterion": { "type": "string" },
+                "description": { "type": "string" },
+                "examples": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+                "improvements": {
+                  "type": "object",
+                  "properties": {
+                    "weak": { "type": "string" },
+                    "better": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "scoring_system": {
+        "type": "object",
+        "required": ["description", "categories"],
+        "properties": {
+          "description": { "type": "string" },
+          "categories": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["name", "max_points", "metrics"],
+              "properties": {
+                "name": { "type": "string" },
+                "max_points": { "type": "integer" },
+                "metrics": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["name", "points"],
+                    "properties": {
+                      "name": { "type": "string" },
+                      "points": { "type": "string" },
+                      "guidance": { "type": "string" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "review_reflection": {
+        "type": "object",
+        "properties": {
+          "description": { "type": "string" },
+          "breakthrough_criteria": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+          "insight_evaluation_process": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+          "implementation_guidelines": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+        }
+      },
+      "final_verification_checklist": {
+        "type": "object",
+        "properties": {
+          "description": { "type": "string" },
+          "sections": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": { "type": "string" },
+                "items": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+              }
+            }
+          },
+          "confirmation_statement": { "type": "string" }
+        }
+      },
+      "framework_relationships": {
+        "type": "array",
+        "items": { "$ref": "../common-definitions.schema.json#/definitions/componentReference" }
+      }
+    }
+  }

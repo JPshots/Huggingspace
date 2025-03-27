@@ -1,0 +1,385 @@
+{
+  "creative_vision": {
+    "description": "A framework for developing truly original thematic approaches that showcase your unique perspective",
+    "principles": [
+      "There are no predefined 'correct' themes - your unique perspective is what makes reviews valuable",
+      "The most memorable reviews often feature unexpected thematic frameworks",
+      "Themes should emerge naturally from your authentic product experience",
+      "Your personal interests, expertise, and background can inspire unique thematic approaches",
+      "The best themes often come from unexpected connections between the product and other domains"
+    ],
+    "idea_generation": {
+      "cross_domain_mapping": {
+        "description": "Identifying unexpected connections between product and unrelated domains",
+        "prompts": [
+          "If this product were in a completely different industry, what would it be?",
+          "What aspect of nature does this product's function or design remind you of?",
+          "What historical period or movement shares characteristics with this product?",
+          "What movie genre best captures the experience of using this product?"
+        ],
+        "example": {
+          "product": "Baby thermometer",
+          "connection": "Medieval siege warfare - waiting for the perfect moment to capture temperature readings",
+          "thematic_potential": "Review themed around \"The Art of Temperature Warfare\" with sections like \"BATTLEFIELD PREPARATION\" and \"TACTICAL ADVANTAGES\""
+        }
+      },
+      "personal_expertise_transfer": {
+        "description": "Applying your unique knowledge domains to product reviews",
+        "prompts": [
+          "How does this product connect to your professional expertise?",
+          "What hobby or personal interest could provide an unexpected lens for this review?",
+          "What specialized vocabulary from your background could create a unique review voice?"
+        ],
+        "example": {
+          "product": "Kitchen measuring cups",
+          "expertise": "Laboratory science background",
+          "thematic_potential": "Review themed as \"Kitchen Laboratory\" with sections like \"EXPERIMENTAL PROCEDURES\" and \"DATA ANALYSIS\""
+        }
+      }
+    }
+  },
+  "theme_discovery": {
+    "description": "A process for identifying and developing product-specific themes rather than forcing pre-determined options",
+    "principles": [
+      "Let themes emerge naturally from product characteristics and testing experiences",
+      "Identify themes during the question-gathering phase rather than after writing begins",
+      "Select themes that naturally complement the product's function, form, or purpose",
+      "Consider multiple potential themes before committing to one"
+    ],
+    "process": [
+      "During product testing, note any natural metaphors or comparisons that come to mind",
+      "Consider the product's core function and what domains naturally connect to it",
+      "Identify any strong emotional or experiential elements during product use",
+      "Consider 2-3 potential thematic frameworks before selecting the most natural fit"
+    ],
+    "generative_questions": [
+      "If this product were a character in a story, who would it be and why?",
+      "What process outside the product's domain does the usage experience remind you of?",
+      "What unlikely profession would benefit from the skills needed to use this product well?",
+      "What historical era or movement does this product's design or function evoke?",
+      "What natural process does this product's functionality mimic?"
+    ]
+  },
+  "thematic_options": {
+    "description": "Potential thematic frameworks that can be adapted to various products",
+    "options": [
+      {
+        "name": "questAdventure",
+        "description": "Framing product testing as a journey with challenges and discoveries",
+        "example": "Our expedition with this kitchen scale began with skepticism but led to unexpected territory.",
+        "product_fit": "Ideal for complex products with learning curves or discovery elements"
+      },
+      {
+        "name": "relationshipMetaphor",
+        "description": "Positioning the product as having personality and relationship dynamics",
+        "example": "This thermometer is like that friend who occasionally tells you what you want to hear instead of the truth.",
+        "product_fit": "Perfect for products with consistency issues or trust requirements"
+      },
+      {
+        "name": "scientificObservation",
+        "description": "Positioning yourself as researcher documenting findings",
+        "example": "Field notes reveal this specimen thrives in humid bathroom environments but struggles in direct sunlight.",
+        "product_fit": "Excellent for products requiring methodical testing across conditions"
+      }
+    ],
+    "themed_section_frameworks": [
+      {
+        "theme": "Kitchen Lab/Scientific",
+        "description": "Framing product usage as scientific experimentation",
+        "section_headers": [
+          {
+            "original": "DAILY USE",
+            "themed": ">> THE DAILY EXPERIMENTS"
+          },
+          {
+            "original": "PROS AND CONS",
+            "themed": "** LABORATORY OBSERVATIONS"
+          },
+          {
+            "original": "TECHNICAL SPECIFICATIONS",
+            "themed": "** SPECIMEN SPECIFICATIONS"
+          },
+          {
+            "original": "TARGET AUDIENCE",
+            "themed": ">> RESEARCHER PROFILES"
+          },
+          {
+            "original": "PRACTICAL TIPS",
+            "themed": "*** FIELD NOTES"
+          },
+          {
+            "original": "VERDICT",
+            "themed": ">> RESEARCH CONCLUSIONS"
+          }
+        ]
+      },
+      {
+        "theme": "Sports/Athletics",
+        "description": "Framing product usage in competitive sports terminology",
+        "section_headers": [
+          {
+            "original": "DAILY USE",
+            "themed": ">> THE DAILY TRAINING"
+          },
+          {
+            "original": "PROS AND CONS",
+            "themed": "** HIGHS AND LOWS"
+          },
+          {
+            "original": "TECHNICAL SPECIFICATIONS",
+            "themed": "** STATS AND MEASUREMENTS"
+          },
+          {
+            "original": "TARGET AUDIENCE",
+            "themed": ">> TEAM ROSTER"
+          },
+          {
+            "original": "PRACTICAL TIPS",
+            "themed": "*** COACHING NOTES"
+          },
+          {
+            "original": "VERDICT",
+            "themed": ">> FINAL SCORE"
+          }
+        ]
+      },
+      {
+        "theme": "Adventure/Expedition",
+        "description": "Framing product usage as an exploratory journey",
+        "section_headers": [
+          {
+            "original": "DAILY USE",
+            "themed": ">> THE JOURNEY"
+          },
+          {
+            "original": "PROS AND CONS",
+            "themed": "** TRAIL MARKERS"
+          },
+          {
+            "original": "TECHNICAL SPECIFICATIONS",
+            "themed": "** EXPEDITION GEAR"
+          },
+          {
+            "original": "TARGET AUDIENCE",
+            "themed": ">> FELLOW TRAVELERS"
+          },
+          {
+            "original": "PRACTICAL TIPS",
+            "themed": "*** SURVIVAL TACTICS"
+          },
+          {
+            "original": "VERDICT",
+            "themed": ">> EXPEDITION REPORT"
+          }
+        ]
+      }
+    ],
+    "theme_generation_questions": [
+      "What metaphorical domain naturally connects to this product's function?",
+      "What unexpected comparison came to mind during product testing?",
+      "What storytelling framework would make this product's review memorable?"
+    ]
+  },
+  "thematic_anchor_points": {
+    "description": "Strategic locations throughout the review where thematic elements should be consistently reinforced",
+    "anchor_points": [
+      {
+        "name": "openingHook",
+        "purpose": "Establish the primary theme",
+        "implementation": [
+          "Introduce thematic concept in first paragraph",
+          "Use vivid thematic imagery that sets expectations",
+          "Connect theme directly to product purpose"
+        ],
+        "example": {
+          "theme": "Kitchen Lab",
+          "implementation": "Tales from a Kitchen Lab: The 3oz Glass Measuring Cup Chronicles"
+        }
+      },
+      {
+        "name": "sectionHeaders",
+        "purpose": "Reinforce theme through structural elements",
+        "implementation": [
+          "Transform standard headers into theme-aligned versions",
+          "Maintain ALL CAPS for consistency",
+          "Ensure headers still clearly communicate section purpose"
+        ]
+      },
+      {
+        "name": "strategicSectionPoints",
+        "purpose": "Maintain thematic presence throughout content",
+        "implementation": [
+          "Place one thematic reference in each major section",
+          "Use thematic vocabulary consistently across sections",
+          "Position references to enhance rather than interrupt information flow"
+        ],
+        "placement": [
+          "Position at beginning or end of sections rather than middle",
+          "Use as transition elements between sections when possible",
+          "Place after core information has been delivered"
+        ]
+      },
+      {
+        "name": "conclusionVerdict",
+        "purpose": "Create thematic closure and callback",
+        "implementation": [
+          "Reference opening thematic elements",
+          "Summarize product value in thematic terms",
+          "End with memorable thematic statement"
+        ],
+        "example": {
+          "theme": "Kitchen Lab",
+          "implementation": "Our experiments confirm this measuring cup delivers laboratory-grade precision for your culinary adventures."
+        }
+      }
+    ]
+  },
+  "thematic_progression_map": {
+    "description": "Guidelines for evolving thematic elements throughout a review rather than maintaining static metaphors",
+    "principles": [
+      "Themes should evolve naturally throughout the review narrative",
+      "Thematic progression creates greater reader engagement than static metaphors",
+      "Different sections benefit from different thematic intensity levels"
+    ],
+    "implementation": {
+      "phases": [
+        {
+          "name": "Introduction",
+          "thematic_intensity": "Medium-High",
+          "purpose": "Establish thematic concept without overwhelming"
+        },
+        {
+          "name": "Technical Sections",
+          "thematic_intensity": "Low",
+          "purpose": "Allow technical details to remain clear and accessible"
+        },
+        {
+          "name": "Experiential Sections",
+          "thematic_intensity": "Medium",
+          "purpose": "Enhance real-world usage with thematic elements"
+        },
+        {
+          "name": "Verdict",
+          "thematic_intensity": "High",
+          "purpose": "Bring thematic elements to cohesive conclusion"
+        }
+      ]
+    },
+    "example_progression": {
+      "theme": "Dating metaphor for product testing",
+      "introduction": "Our first date with this spray paint was promising...",
+      "technical": "Its technical specifications looked good on paper...",
+      "experiential": "After a few weeks together, we discovered compatibility issues...",
+      "verdict": "While we're breaking up with this brand, we've started a promising relationship with its competitor..."
+    }
+  },
+  "balancing_considerations": [
+    "Theme integration should enhance rather than obscure information",
+    "Technical sections may have lighter thematic elements",
+    "Narrative sections can support stronger thematic presence",
+    "Headers provide constant thematic framework while content balances theme with information",
+    "Maintain theme throughout but vary intensity based on section purpose",
+    "Allow themes to serve content rather than forcing content to serve themes"
+  ],
+  "product_category_adaptations": {
+    "description": "Guidance for selecting appropriate themes based on product type",
+    "adaptations": [
+      {
+        "category": "Tech Products",
+        "recommended_themes": [
+          "Future exploration/time travel (for cutting-edge products)",
+          "Archaeological expedition (for products with deep feature sets)",
+          "Symphony/musical performance (for products with multiple components)"
+        ],
+        "implementation_guidance": [
+          "Focus themes on discovery and capability exploration",
+          "Use themes that can accommodate technical precision",
+          "Balance technical complexity with accessible metaphors"
+        ]
+      },
+      {
+        "category": "Home/Kitchen Products",
+        "recommended_themes": [
+          "Laboratory/scientific experimentation",
+          "Artistic creation studio",
+          "Culinary journey/exploration"
+        ],
+        "implementation_guidance": [
+          "Select themes that connect to everyday experiences",
+          "Use themes that accommodate practical guidance",
+          "Choose themes that elevate ordinary activities"
+        ]
+      },
+      {
+        "category": "Lifestyle/Personal Products",
+        "recommended_themes": [
+          "Personal transformation journey",
+          "Relationship dynamics",
+          "Daily ritual/ceremony"
+        ],
+        "implementation_guidance": [
+          "Select themes that respect personal connection to product",
+          "Use themes that accommodate emotional dimensions",
+          "Choose themes that resonate with target user identity"
+        ]
+      }
+    ],
+    "selection_criteria": [
+      "Theme should naturally complement product function and usage context",
+      "Consider target audience's likely familiarity with thematic domain",
+      "Theme should provide opportunities for both technical and experiential content",
+      "Selected theme should maintain effectiveness across all review sections"
+    ]
+  },
+  "thematic_intensity_guidance": {
+    "description": "Framework for determining appropriate thematic intensity based on product and audience",
+    "intensity_levels": [
+      {
+        "level": "Light Thematic Touch",
+        "characteristics": [
+          "Thematic elements primarily in headers and transitions",
+          "Minimal thematic vocabulary in main content",
+          "Theme serves as organizational framework only"
+        ],
+        "best_for": [
+          "Highly technical products requiring precision",
+          "Medical/health products where clarity is critical",
+          "Professional tools where information takes priority"
+        ]
+      },
+      {
+        "level": "Moderate Thematic Integration",
+        "characteristics": [
+          "Consistent thematic vocabulary throughout content",
+          "Thematic elements in 30-40% of content sections",
+          "Clear thematic framework with balanced information"
+        ],
+        "best_for": [
+          "Consumer electronics with both technical and lifestyle aspects",
+          "Home/kitchen products with multiple use cases",
+          "Lifestyle products with practical and emotional dimensions"
+        ]
+      },
+      {
+        "level": "Immersive Thematic Experience",
+        "characteristics": [
+          "Comprehensive thematic integration throughout",
+          "Rich thematic vocabulary and extended metaphors",
+          "Narrative-driven structure with strong thematic identity"
+        ],
+        "best_for": [
+          "Entertainment/creative products",
+          "Luxury/lifestyle products with strong emotional appeal",
+          "Products with unique personality or distinctive character"
+        ]
+      }
+    ],
+    "implementation_considerations": [
+      "Always prioritize information clarity over thematic consistency",
+      "Adjust thematic intensity if it begins to obscure key product details",
+      "Consider how theme affects readability for the target audience",
+      "Use higher intensity for products where experience dimension is primary",
+      "Use lower intensity for products where technical accuracy is critical"
+    ]
+  }
+}

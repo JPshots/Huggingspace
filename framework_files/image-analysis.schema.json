@@ -1,0 +1,65 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://amazon-review-framework.com/schemas/image-analysis.schema.json",
+    "title": "Image Analysis",
+    "description": "Framework for extracting valuable information from product images and photos",
+    "type": "object",
+    "required": ["analysis_categories", "visual_verification_checklist"],
+    "properties": {
+      "analysis_categories": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["name", "description", "questions"],
+          "properties": {
+            "name": { "type": "string" },
+            "description": { "type": "string" },
+            "questions": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+          }
+        }
+      },
+      "visual_verification_checklist": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "category": { "type": "string" },
+            "elements": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+          }
+        }
+      },
+      "implementation_guidance": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+      "red_flags_checklist": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+      "image_integration": {
+        "type": "object",
+        "properties": {
+          "description": { "type": "string" },
+          "reference_principles": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": { "type": "string" },
+                "description": { "type": "string" },
+                "examples": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+              }
+            }
+          },
+          "integration_workflow": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "step": { "type": "string" },
+                "actions": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+              }
+            }
+          }
+        }
+      },
+      "framework_relationships": {
+        "type": "array",
+        "items": { "$ref": "../common-definitions.schema.json#/definitions/componentReference" }
+      }
+    }
+  }

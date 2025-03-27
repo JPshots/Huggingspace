@@ -1,0 +1,172 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://amazon-review-framework.com/schemas/narrative-sensory.schema.json",
+    "title": "Narrative and Sensory Frameworks",
+    "description": "Frameworks for incorporating story elements and sensory details to enhance review engagement",
+    "type": "object",
+    "required": ["narrative_structures", "sensory_crafting_framework"],
+    "properties": {
+      "narrative_structures": {
+        "type": "object",
+        "required": ["description", "micro_narratives"],
+        "properties": {
+          "description": { "type": "string" },
+          "micro_narratives": {
+            "type": "object",
+            "properties": {
+              "description": { "type": "string" },
+              "implementation": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+              "example": { "type": "string" },
+              "best_practices": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+            }
+          },
+          "emotional_journey_mapping": {
+            "type": "object",
+            "properties": {
+              "description": { "type": "string" },
+              "structure": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+              "implementation": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+              "example": { "type": "string" }
+            }
+          },
+          "comparison_narratives": {
+            "type": "object",
+            "properties": {
+              "description": { "type": "string" },
+              "formats": {
+                "type": "object",
+                "properties": {
+                  "better_than_worse_than": {
+                    "type": "object",
+                    "properties": {
+                      "description": { "type": "string" },
+                      "example": { "type": "string" }
+                    }
+                  },
+                  "promise_vs_delivery": {
+                    "type": "object",
+                    "properties": {
+                      "description": { "type": "string" },
+                      "example": { "type": "string" }
+                    }
+                  }
+                }
+              },
+              "best_practices": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+            }
+          },
+          "strategic_placement": {
+            "type": "object",
+            "properties": {
+              "description": { "type": "string" },
+              "placements": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "section": { "type": "string" },
+                    "narrative_elements": { "type": "string" },
+                    "purpose": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "sensory_crafting_framework": {
+        "type": "object",
+        "required": ["description", "principles", "implementation"],
+        "properties": {
+          "description": { "type": "string" },
+          "principles": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+          "implementation": {
+            "type": "object",
+            "properties": {
+              "steps": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "action": { "type": "string" },
+                    "categories": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "name": { "type": "string" },
+                          "relevance": { "type": "string" },
+                          "aspects": { "type": "string" }
+                        }
+                      }
+                    },
+                    "guidance": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+                    "placements": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+                  }
+                }
+              }
+            }
+          },
+          "product_category_priorities": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "category": { "type": "string" },
+                "primary_senses": {
+                  "type": "array",
+                  "items": { "type": "string" }
+                },
+                "example": { "type": "string" }
+              }
+            }
+          },
+          "multi_sensory_integration": {
+            "type": "object",
+            "properties": {
+              "description": { "type": "string" },
+              "techniques": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+              "example": { "type": "string" }
+            }
+          }
+        }
+      },
+      "value_integration_framework": {
+        "type": "object",
+        "properties": {
+          "description": { "type": "string" },
+          "value_categories": {
+            "type": "object",
+            "properties": {
+              "price_performance_analysis": {
+                "type": "object",
+                "properties": {
+                  "implementation": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+                  "example": { "type": "string" }
+                }
+              },
+              "usage_optimization": {
+                "type": "object",
+                "properties": {
+                  "implementation": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+                  "example": { "type": "string" }
+                }
+              },
+              "compatibility_insights": {
+                "type": "object",
+                "properties": {
+                  "implementation": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+                  "example": { "type": "string" }
+                }
+              }
+            }
+          },
+          "integration": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+        }
+      },
+      "framework_relationships": {
+        "type": "array",
+        "items": { "$ref": "../common-definitions.schema.json#/definitions/componentReference" }
+      }
+    }
+  }

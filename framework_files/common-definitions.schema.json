@@ -1,0 +1,43 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://amazon-review-framework.com/schemas/common-definitions.schema.json",
+    "title": "Common Definitions",
+    "description": "Core shared definitions for Amazon Review Framework",
+    "definitions": {
+      "description": {
+        "type": "string"
+      },
+      "priority": {
+        "type": "string",
+        "enum": ["highest", "high", "medium", "low"]
+      },
+      "stringArray": {
+        "type": "array",
+        "items": { "type": "string" }
+      },
+      "componentReference": {
+        "type": "object",
+        "required": ["component", "relationship"],
+        "properties": {
+          "component": { "type": "string" },
+          "relationship": { "type": "string" },
+          "note": { "type": "string" }
+        }
+      },
+      "orderedStep": {
+        "type": "object",
+        "required": ["order", "action"],
+        "properties": {
+          "order": { "type": "integer" },
+          "action": { "type": "string" },
+          "implementation": {
+            "oneOf": [
+              { "$ref": "#/definitions/stringArray" },
+              { "type": "string" }
+            ]
+          },
+          "reference": { "type": "string" }
+        }
+      }
+    }
+  }

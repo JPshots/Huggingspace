@@ -1,0 +1,293 @@
+{
+  "techniques": [
+    {
+      "name": "unexpectedAnalogies",
+      "description": "Creating comparisons that surprise while clarifying",
+      "example": "Like upgrading from economy to business class in the snack world",
+      "frequency": "1-2 per review",
+      "best_for": "Highlighting significant improvements or quality differences"
+    },
+    {
+      "name": "deliberateUnderstatement",
+      "description": "Understating something significant for humorous effect",
+      "example": "Battery compartment has all the durability of wet tissue paper",
+      "frequency": "1 per review",
+      "best_for": "Highlighting serious design flaws or limitations"
+    },
+    {
+      "name": "absurdSpecificity",
+      "description": "Using unexpectedly detailed descriptions",
+      "example": "Perfect for photographers whose flashes consume batteries like a toddler with Halloween candy",
+      "frequency": "1-2 per review",
+      "best_for": "Creating vivid user scenarios that readers can identify with"
+    },
+    {
+      "name": "selfDeprecatingObservations",
+      "description": "Using personal shortcomings to highlight product features",
+      "example": "We've become popcorn snobs, vacuum-sealing kernels for optimal freshness",
+      "frequency": "1 per review",
+      "best_for": "Creating relatability and authenticity"
+    },
+    {
+      "name": "creativeTerminology",
+      "description": "Inventing colorful terms for standard features or issues",
+      "example": "Artery-assassin oils instead of unhealthy oils",
+      "frequency": "2-3 per review",
+      "best_for": "Making technical terms more memorable and engaging"
+    }
+  ],
+  "figurative_language_implementation": {
+    "description": "Guidelines for implementing effective figurative language in reviews",
+    "analogy_guidelines": {
+      "principle": "Use unexpected but relatable comparisons",
+      "examples": [
+        {
+          "analogy": "landing strip for baby feet",
+          "strength": "Combines humor with clear visual understanding"
+        },
+        {
+          "analogy": "Velcro that could probably hold a small aircraft together",
+          "strength": "Exaggeration that emphasizes product quality"
+        }
+      ],
+      "vivid_imagery": {
+        "description": "Use absurd but crystal-clear comparisons that create immediate mental pictures",
+        "categories": [
+          {
+            "name": "physicalStateComparisons",
+            "examples": [
+              "feeling like you walked out of a spa vs. just crawled out of a losing boxing match",
+              "walking popsicle for abnormally low temperature reading",
+              "internal organs hosting their own Summer Olympics for fever symptoms"
+            ],
+            "application": "Perfect for contrasting expected vs. actual experiences"
+          },
+          {
+            "name": "designContradictionAnalogies",
+            "examples": [
+              "steering wheel on a toaster for features that contradict product purpose",
+              "handle on a door that doesn't open for misleading design elements",
+              "wheels on a chair that's bolted to the floor for unused potential"
+            ],
+            "application": "Highlights illogical design choices or misleading features"
+          },
+          {
+            "name": "effortDifficultyAnalogies",
+            "examples": [
+              "moving to the bathroom mirror would be like running a marathon for simple tasks made difficult",
+              "energy of a sloth on sedatives for depleted state affecting product use",
+              "playing temperature bingo for inconsistent results"
+            ],
+            "application": "Illustrates how product complexity affects real-world usage"
+          }
+        ],
+        "principles": [
+          "Create immediate visual understanding through extreme but relatable images",
+          "Use absurdity to highlight product shortcomings without sounding bitter",
+          "Pair opposing images to create contrast that illustrates points",
+          "Connect analogies to specific product features or experiences"
+        ]
+      }
+    },
+    "natural_humor_techniques": {
+      "description": "Strategies for integrating humor naturally within product descriptions rather than as standalone jokes",
+      "principles": [
+        "Embed humor directly within functional descriptions",
+        "Use figurative language that both entertains and informs",
+        "Allow product characteristics to dictate humor style"
+      ],
+      "techniques": {
+        "embedded_metaphors": {
+          "description": "Using metaphors that are directly integrated into product descriptions",
+          "examples": {
+            "weak": "The basin is very sturdy. It can hold a lot of water without wobbling.",
+            "strong": "The basin can be relocated when full with only the slightest tsunami effect."
+          }
+        },
+        "descriptive_hyperbole": {
+          "description": "Using measured exaggeration to highlight product qualities",
+          "examples": {
+            "weak": "The handles are thin and can be uncomfortable when carrying a full basin.",
+            "strong": "The cut-out handles are thinner than our patience at 4AM when lifting a water-filled basin."
+          }
+        },
+        "functional_similes": {
+          "description": "Creating comparisons that directly illustrate product functionality",
+          "examples": {
+            "weak": "The collapsibility feature wasn't useful for our large sink.",
+            "strong": "The collapsibility feature is as useful to us as sunglasses at midnight."
+          }
+        }
+      },
+      "implementation": [
+        "Look for opportunities to transform plain descriptions into vivid imagery",
+        "Connect humor directly to the specific functionality being described",
+        "Use figurative language that creates immediate visual understanding",
+        "Balance hyperbole with accuracy - exaggerate for effect without misleading"
+      ]
+    },
+    "implementation_sequence": [
+      "Identify key product features that would benefit from figurative enhancement",
+      "Select appropriate figurative technique based on feature characteristics",
+      "Draft factual description first",
+      "Add figurative element after core information",
+      "Verify figurative language enhances rather than obscures information"
+    ]
+  },
+  "strategic_placement": [
+    {
+      "location": "Opening/Introduction",
+      "creative_elements": "Strong thematic establishment, sensory hooks, emotional context",
+      "purpose": "Engage reader and establish review personality"
+    },
+    {
+      "location": "Technical/Specifications",
+      "creative_elements": "Limited, strategic figurative language, minimal thematic elements",
+      "purpose": "Clarify complex information without distraction"
+    },
+    {
+      "location": "Experiential Sections",
+      "creative_elements": "Micro-narratives, sensory details, moderate thematic presence",
+      "purpose": "Create vivid, relatable usage scenarios"
+    },
+    {
+      "location": "Evaluation Sections",
+      "creative_elements": "Strategic analogies, measured personality in select list items",
+      "purpose": "Enhance memorability of key points while maintaining clarity"
+    },
+    {
+      "location": "Conclusion/Verdict",
+      "creative_elements": "Thematic callback, memorable final impression",
+      "purpose": "Create satisfying closure and reinforce key messages"
+    }
+  ],
+  "conversation_element_integration": {
+    "description": "Methods for creating a conversational tone without sacrificing information quality",
+    "techniques": [
+      {
+        "name": "strategicInformality",
+        "description": "Using selective informal language to create connection",
+        "examples": {
+          "weak": "This device performs satisfactorily on most surfaces.",
+          "strong": "This thing works like a charm on pretty much any surface you throw at it."
+        },
+        "implementation": "Use informal wording primarily in experiential sections while maintaining precision in technical sections"
+      },
+      {
+        "name": "directAddress",
+        "description": "Addressing the reader directly in select situations",
+        "examples": {
+          "weak": "It is recommended to charge the device fully before first use.",
+          "strong": "Do yourself a favor and charge this fully before your first use."
+        },
+        "implementation": "Use primarily in practical advice sections to create immediacy"
+      },
+      {
+        "name": "rhetoricalQuestions",
+        "description": "Using strategic questions that reader would likely ask",
+        "examples": {
+          "weak": "Many people wonder about battery life.",
+          "strong": "But what about battery life? That's where things get interesting."
+        },
+        "implementation": "Use to transition between sections or introduce new evaluation criteria"
+      }
+    ],
+    "balance_guidelines": [
+      "Conversational elements should comprise 15-20% of personality content",
+      "Use conversational tone primarily in opening and experiential sections",
+      "Reduce conversational elements in technical specifications",
+      "Maintain clear factual content even when tone is conversational"
+    ]
+  },
+  "product_category_adaptations": {
+    "description": "Adapting personality techniques for specific product categories",
+    "adaptations": [
+      {
+        "category": "Tech Products",
+        "recommended_techniques": [
+          "absurdSpecificity",
+          "unexpectedAnalogies",
+          "creativeTerminology"
+        ],
+        "voice_guidance": "Knowledgeable but not elitist; passionate but practical",
+        "specialty_approaches": [
+          "Compare with outdated technology for contrast",
+          "Reference tech frustrations readers will recognize",
+          "Use tech-adjacent metaphors from other domains"
+        ]
+      },
+      {
+        "category": "Home/Kitchen Products",
+        "recommended_techniques": [
+          "selfDeprecatingObservations",
+          "unexpectedAnalogies",
+          "absurdSpecificity"
+        ],
+        "voice_guidance": "Warm, practical, domestic experience-focused",
+        "specialty_approaches": [
+          "Reference common household scenarios",
+          "Use cooking metaphors for non-cooking products",
+          "Compare with universal household frustrations"
+        ]
+      },
+      {
+        "category": "Health/Beauty Products",
+        "recommended_techniques": [
+          "deliberateUnderstatement",
+          "creativeTerminology",
+          "selfDeprecatingObservations"
+        ],
+        "voice_guidance": "Thoughtful, measured, balanced between science and experience",
+        "specialty_approaches": [
+          "Focus on before/after contrasts",
+          "Use gentle humor that acknowledges insecurities",
+          "Maintain respectful tone regarding body concerns"
+        ]
+      }
+    ],
+    "implementation_guidance": [
+      "Consider product purpose and target audience when selecting techniques",
+      "Adjust personality level based on product category sensitivity",
+      "Use category-appropriate references and examples",
+      "Maintain authentic voice regardless of product category"
+    ]
+  },
+  "authenticity_enhancement": {
+    "description": "Techniques for ensuring personality feels genuine rather than manufactured",
+    "techniques": [
+      {
+        "name": "specificityAnchoring",
+        "description": "Tying personality elements to highly specific details",
+        "examples": {
+          "generic": "The lamp has a nice glow.",
+          "authentic": "The lamp creates that perfect golden-hour glow that makes even our 20-year-old couch look Instagram-worthy."
+        },
+        "implementation": "Include precise, unusual details that would be difficult to invent"
+      },
+      {
+        "name": "quirkyObservation",
+        "description": "Noting unexpected or seemingly trivial discoveries",
+        "examples": {
+          "generic": "The product is well-designed.",
+          "authentic": "Oddly enough, the power button makes a different sound depending on whether you're turning it on or off - a small detail I unexpectedly appreciate."
+        },
+        "implementation": "Include observations that serve no marketing purpose but feel real"
+      },
+      {
+        "name": "contextualAnecdotes",
+        "description": "Brief stories that provide authentic usage context",
+        "examples": {
+          "generic": "This works well for travel.",
+          "authentic": "During our red-eye to Boston, I managed to use this without waking my seat neighbor - something my previous model never accomplished."
+        },
+        "implementation": "Include specific circumstances, locations, or people (without identifying details)"
+      }
+    ],
+    "verification_questions": [
+      "Does this sound like something a real person would notice?",
+      "Would marketing copy ever include this observation?",
+      "Does this reveal something unexpected about the product?",
+      "Is this observation specific enough that it would be difficult to apply to similar products?"
+    ]
+  }
+}

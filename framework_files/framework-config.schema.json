@@ -1,0 +1,62 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://amazon-review-framework.com/schemas/framework-config.schema.json",
+    "title": "Framework Configuration",
+    "description": "Core configuration schema for Amazon Review Framework",
+    "type": "object",
+    "required": ["name", "version", "components", "workflow"],
+    "properties": {
+      "name": { "type": "string" },
+      "version": { "type": "string" },
+      "description": { "type": "string" },
+      "components": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["name", "description", "role"],
+          "properties": {
+            "name": { "type": "string" },
+            "description": { "type": "string" },
+            "role": { "type": "string" }
+          }
+        }
+      },
+      "workflow": {
+        "type": "object",
+        "required": ["phases"],
+        "properties": {
+          "phases": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["name", "steps"],
+              "properties": {
+                "name": { "type": "string" },
+                "steps": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["action", "reference"],
+                    "properties": {
+                      "action": { "type": "string" },
+                      "reference": { "type": "string" },
+                      "activities": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "ai_role": {
+        "type": "object",
+        "properties": {
+          "primary_role": { "type": "string" },
+          "workflow_clarification": { "type": "string" },
+          "correct_understanding": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+          "incorrect_understanding": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+        }
+      }
+    }
+  }

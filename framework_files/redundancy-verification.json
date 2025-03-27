@@ -1,0 +1,288 @@
+{
+  "description": "Framework for identifying and eliminating unnecessary repetition in reviews",
+  "section_specialization": [
+    {
+      "priority": "high",
+      "guideline": "Each section should serve a unique informational purpose with minimal overlap"
+    },
+    {
+      "priority": "high",
+      "guideline": "Information should generally appear in its most optimal section only"
+    }
+  ],
+  "information_progression": [
+    {
+      "priority": "medium",
+      "guideline": "Later mentions of key points should typically add new dimensions rather than repeating"
+    }
+  ],
+  "format_differentiation": [
+    {
+      "priority": "high",
+      "guideline": "Paragraph content, list items, and tips sections should contain distinct information types"
+    },
+    {
+      "priority": "high",
+      "guideline": "List items should generally not be reformulations of paragraph content"
+    },
+    {
+      "priority": "high",
+      "guideline": "Tips should provide actionable guidance not extensively covered elsewhere"
+    }
+  ],
+  "strategic_exceptions": [
+    {
+      "priority": "medium",
+      "guideline": "Key information may be restated when doing so significantly enhances clarity or comprehension"
+    },
+    {
+      "priority": "medium",
+      "guideline": "Critical safety or compatibility information may appear in multiple sections when warranted"
+    },
+    {
+      "priority": "medium",
+      "guideline": "Complex technical points may be introduced in technical sections then reframed in simpler terms elsewhere"
+    }
+  ],
+  "checkpoints": [
+    "Are specific product features repeated across multiple sections without adding new context?",
+    "Do certain phrases or descriptions appear multiple times with similar wording?",
+    "Are dimensions, specifications, or measurements repeated unnecessarily?",
+    "Does each section you've chosen have a distinct purpose?",
+    "Is there significant content overlap between sections?",
+    "Does each section add unique value to the review?",
+    "Are distinctive descriptive phrases repeated multiple times?",
+    "Do multiple sentences make the same point with slight rewording?",
+    "Are metaphors or creative language elements reused without adding value?"
+  ],
+  "resolution_strategies": {
+    "optimal_placement": {
+      "description": "Identify the single best location for each piece of information",
+      "implementation": [
+        "Determine which section most logically houses each information element",
+        "Move information to optimal section and remove from other locations",
+        "Add brief references/callbacks rather than full repetition when needed"
+      ]
+    },
+    "dimension_addition": {
+      "description": "Transform repetition into valuable elaboration",
+      "implementation": [
+        "When information must appear in multiple sections, ensure each mention adds new dimension",
+        "First mention: Basic factual information",
+        "Second mention: Contextual significance or application",
+        "Third mention: Comparative insight or unique perspective"
+      ],
+      "example": {
+        "first_mention": "The 20-second recovery time means rapid-fire stress situations require patience.",
+        "second_mention": "Unlike my rubber banana which responds instantly, the butter stick's 20-second recovery creates a deliberate, mindful stress relief experience."
+      }
+    },
+    "phrasal_variation": {
+      "description": "Using alternative language for necessary concept repetition",
+      "implementation": [
+        "Identify concepts that must appear multiple times",
+        "Create varied phrasings that convey same information",
+        "Distribute varied phrasings across sections"
+      ],
+      "example": {
+        "variation1": "Its delayed recovery after squeezing...",
+        "variation2": "The foam's 20-second reformation period...",
+        "variation3": "The pause between stress-relief sessions..."
+      }
+    }
+  },
+  "implementation_process": [
+    "Scan entire review for repeated information",
+    "Identify optimal placement for each information element",
+    "Determine which repeated elements can be removed vs. enhanced",
+    "Apply appropriate resolution strategy for each instance",
+    "Verify that redundancy removal hasn't created gaps in logical flow",
+    "Complete final verification before submission"
+  ],
+  "common_redundancy_patterns": {
+    "description": "Frequently occurring redundancy types that should be addressed",
+    "patterns": [
+      {
+        "pattern": "technical_specification_repetition",
+        "description": "Repeating exact specifications across multiple sections",
+        "example": "Stating '500ml capacity' in introduction, features section, and usage section",
+        "resolution": "State once in technical specifications section, then reference functionally in other sections",
+        "improved_example": "Technical specs: '500ml capacity'. Usage section: 'The half-liter capacity proved perfect for our family of four.'"
+      },
+      {
+        "pattern": "primary_feature_restating",
+        "description": "Repeatedly mentioning core features without adding new information",
+        "example": "Mentioning 'automatic shutoff' multiple times with similar descriptions",
+        "resolution": "Use dimension addition to add new context in each mention",
+        "improved_example": "Features section: 'Includes automatic shutoff.' Safety section: 'The automatic shutoff prevented potential accidents twice during our three-month testing period.'"
+      },
+      {
+        "pattern": "pros_cons_duplication",
+        "description": "Duplicating pros/cons between list format and paragraph descriptions",
+        "example": "Describing 'lightweight design' in paragraph, then listing 'lightweight and portable' as a pro",
+        "resolution": "Use distinctive coverage in paragraph vs. list format",
+        "improved_example": "Paragraph: Describes how lightweight design affected specific usage scenarios. List: 'Lightweight (1.2 lbs) - easy to pack for travel'"
+      },
+      {
+        "pattern": "comparative_statement_repetition",
+        "description": "Repeatedly making the same comparative claims throughout review",
+        "example": "Stating 'better than Brand X' multiple times with similar justification",
+        "resolution": "Consolidate comparative analysis in dedicated section",
+        "improved_example": "Create focused 'Comparison' section with detailed analysis rather than scattered comparative statements"
+      },
+      {
+        "pattern": "verdict_restatement",
+        "description": "Verdict simply restating points already covered in detail",
+        "example": "Verdict paragraph that merely summarizes already-stated pros and cons",
+        "resolution": "Focus verdict on decision guidance rather than feature recapping",
+        "improved_example": "Verdict emphasizes ideal user profile and value proposition rather than repeating feature list"
+      }
+    ],
+    "detection_technique": "During review scan, identify any instances matching these patterns and apply recommended resolution strategy"
+  },
+  "section_specific_guidelines": {
+    "description": "Specific redundancy guidance for common review sections",
+    "sections": [
+      {
+        "section": "Introduction/Opening",
+        "redundancy_risks": [
+          "Previewing too many specific details covered later",
+          "Stating exact specifications better suited to technical sections",
+          "Providing detailed pros/cons better suited to evaluation sections"
+        ],
+        "optimization_strategy": "Focus on establishing context, problem statement, and general product category rather than specific details"
+      },
+      {
+        "section": "Technical Specifications",
+        "redundancy_risks": [
+          "Repeating specifications across multiple subsections",
+          "Duplicating information from product description",
+          "Mixing objective specifications with subjective assessments"
+        ],
+        "optimization_strategy": "Create single, consolidated specifications section as reference point for other sections"
+      },
+      {
+        "section": "Usage Experience",
+        "redundancy_risks": [
+          "Repeating technical specifications with minimal context",
+          "Duplicating pros/cons also listed in evaluation section",
+          "Restating basic functionality already covered elsewhere"
+        ],
+        "optimization_strategy": "Focus on how features perform in real-world contexts rather than restating what features exist"
+      },
+      {
+        "section": "Pros/Cons",
+        "redundancy_risks": [
+          "Listing items already extensively discussed in narrative sections",
+          "Including items with minimal additional information",
+          "Creating excessive overlap with ideal/non-ideal user sections"
+        ],
+        "optimization_strategy": "Ensure each list item provides distinct, concise information not fully explained elsewhere"
+      },
+      {
+        "section": "Verdict/Conclusion",
+        "redundancy_risks": [
+          "Simply summarizing previously stated points",
+          "Restating exact specifications or feature lists",
+          "Duplicating pros/cons without synthesis"
+        ],
+        "optimization_strategy": "Focus on synthesizing overall assessment and providing guidance rather than recapping details"
+      }
+    ]
+  },
+  "cross_section_integration": {
+    "description": "Techniques for creating cohesive connections between sections without redundancy",
+    "techniques": [
+      {
+        "technique": "callbackReferences",
+        "description": "Brief references to previously covered information without full restatement",
+        "example": "As mentioned earlier, the lightweight design (only 1.2 lbs) makes this ideal for travel scenarios.",
+        "implementation": "Use when needing to connect current point to previously established information"
+      },
+      {
+        "technique": "progressiveElaboration",
+        "description": "Building on previously established information with new dimensions",
+        "example": "That same waterproof construction that handled our pool test also proved valuable during an unexpected rainstorm.",
+        "implementation": "Use when a feature needs multiple mentions but can be expanded in different contexts"
+      },
+      {
+        "technique": "implicationBridging",
+        "description": "Connecting technical features to usage implications without restating",
+        "example": "This lightweight construction translates to significantly less fatigue during all-day use.",
+        "implementation": "Use to connect technical specifications to experiential benefits without repeating specs"
+      },
+      {
+        "technique": "contrastiveReframing",
+        "description": "Presenting previously mentioned information from a different perspective",
+        "example": "While precision users will appreciate the fine adjustment noted above, casual users might find it unnecessarily complex.",
+        "implementation": "Use to present balanced perspective without redundant feature descriptions"
+      }
+    ],
+    "implementation_guidance": [
+      "Identify necessary cross-references between sections",
+      "Select the most appropriate integration technique for each reference",
+      "Use minimal wording for references to previously covered information",
+      "Ensure each reference adds new perspective or context"
+    ]
+  },
+  "final_redundancy_check": {
+    "description": "Process for final redundancy verification before submission",
+    "systematic_process": [
+      {
+        "step": "Full review scan",
+        "action": "Read entire review looking specifically for repeated information",
+        "verification": "Mark any information that appears in multiple locations"
+      },
+      {
+        "step": "Necessity assessment",
+        "action": "For each redundancy, determine if repetition serves a strategic purpose",
+        "verification": "Apply strategic exception criteria to determine if repetition is warranted"
+      },
+      {
+        "step": "Resolution implementation",
+        "action": "Apply appropriate resolution strategy to each unnecessary redundancy",
+        "verification": "Confirm redundancy is eliminated or transformed into value-added content"
+      },
+      {
+        "step": "Flow verification",
+        "action": "Re-read affected sections to ensure logical flow is maintained",
+        "verification": "Confirm edits haven't created disconnects or gaps in information"
+      },
+      {
+        "step": "Keyword preservation",
+        "action": "Verify that important keywords are still appropriately distributed",
+        "verification": "Ensure redundancy elimination hasn't removed strategic keyword placements"
+      }
+    ],
+    "final_checklist": [
+      "No single feature is described in similar ways across multiple sections",
+      "Each section serves a unique informational purpose",
+      "Specifications are stated once and referenced rather than repeated",
+      "List items provide unique information not duplicating paragraph content",
+      "Verdict synthesizes rather than merely restating previous points",
+      "The review contains no consecutive sentences making the same point"
+    ]
+  },
+  "framework_relationships": [
+    {
+      "component": "writing-process.json",
+      "relationship": "Redundancy checking is integrated in the writing workflow",
+      "note": "See writing-process.json > final_polish_process for integration points"
+    },
+    {
+      "component": "quality-assessment.json",
+      "relationship": "Redundancy checking is part of the quality control process",
+      "note": "See quality-assessment.json > final_verification_checklist for integration"
+    },
+    {
+      "component": "content-structure.json",
+      "relationship": "Content structure design helps prevent inherent redundancy",
+      "note": "See content-structure.json > content_organization for complementary guidance"
+    },
+    {
+      "component": "personality-balance.json",
+      "relationship": "Personality techniques should be applied without causing redundancy",
+      "note": "See personality-balance.json > implementation_techniques for compatible implementation"
+    }
+  ]
+}

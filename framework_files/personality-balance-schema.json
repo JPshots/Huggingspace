@@ -1,0 +1,176 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://amazon-review-framework.com/schemas/personality-balance.schema.json",
+  "title": "Personality Balance",
+  "description": "Framework for balancing informational content and personality in reviews",
+  "type": "object",
+  "required": ["content_ratios", "implementation_techniques", "authentic_voice_guidelines"],
+  "properties": {
+    "content_ratios": {
+      "type": "object",
+      "required": ["description", "baseline_ratios", "personality_components", "implementation_principles"],
+      "properties": {
+        "description": { "type": "string" },
+        "baseline_ratios": {
+          "type": "object",
+          "properties": {
+            "informational": { "type": "integer" },
+            "personality": { "type": "integer" },
+            "flexibility": { "type": "integer" },
+            "note": { "type": "string" }
+          }
+        },
+        "personality_components": {
+          "type": "object",
+          "properties": {
+            "humor": { "type": "integer" },
+            "personal_experience": { "type": "integer" },
+            "conversational_elements": { "type": "integer" },
+            "note": { "type": "string" }
+          }
+        },
+        "implementation_principles": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+      }
+    },
+    "product_type_adjustments": {
+      "type": "object",
+      "properties": {
+        "description": { "type": "string" },
+        "adjustments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": { "type": "string" },
+              "personality_adjustment": { "type": "string" },
+              "rationale": { "type": "string" }
+            }
+          }
+        },
+        "implementation_guidance": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+      }
+    },
+    "section_specific_adjustments": {
+      "type": "object",
+      "properties": {
+        "description": { "type": "string" },
+        "content_type_allocations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "content_type": { "type": "string" },
+              "personality_adjustment": { "type": "string" },
+              "rationale": { "type": "string" }
+            }
+          }
+        },
+        "implementation_guidance": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+      }
+    },
+    "implementation_techniques": {
+      "type": "object",
+      "required": ["description", "front_loading", "list_item_strategy"],
+      "properties": {
+        "description": { "type": "string" },
+        "front_loading": {
+          "type": "object",
+          "properties": {
+            "description": { "type": "string" },
+            "examples": {
+              "type": "object",
+              "properties": {
+                "bad": { "type": "string" },
+                "good": { "type": "string" }
+              }
+            },
+            "rationale": { "type": "string" }
+          }
+        },
+        "list_item_strategy": {
+          "type": "object",
+          "properties": {
+            "description": { "type": "string" },
+            "examples": {
+              "type": "object",
+              "properties": {
+                "basic": { "type": "string" },
+                "enhanced": { "type": "string" }
+              }
+            },
+            "implementation": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+          }
+        },
+        "principles": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+      }
+    },
+    "authentic_voice_guidelines": {
+      "type": "object",
+      "required": ["description", "core_principle", "red_flag_patterns", "authenticity_markers"],
+      "properties": {
+        "description": { "type": "string" },
+        "core_principle": {
+          "type": "object",
+          "properties": {
+            "definition": { "type": "string" },
+            "implementation": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+          }
+        },
+        "red_flag_patterns": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "marketing": { "type": "string" },
+              "authentic": { "type": "string" },
+              "explanation": { "type": "string" }
+            }
+          }
+        },
+        "authenticity_markers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "description": { "type": "string" },
+              "example": { "type": "string" }
+            }
+          }
+        },
+        "implementation_process": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "step": { "type": "string" },
+              "process": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+            }
+          }
+        }
+      }
+    },
+    "final_verification_checklist": {
+      "type": "object",
+      "properties": {
+        "description": { "type": "string" },
+        "sections": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "items": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+            }
+          }
+        },
+        "confirmation_statement": { "type": "string" }
+      }
+    },
+    "framework_relationships": {
+      "type": "array",
+      "items": { "$ref": "../common-definitions.schema.json#/definitions/componentReference" }
+    }
+  }
+}

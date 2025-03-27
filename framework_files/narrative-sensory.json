@@ -1,0 +1,367 @@
+{
+  "narrative_structures": {
+    "description": "Frameworks for incorporating story elements to enhance review engagement and clarity",
+    "micro_narratives": {
+      "description": "Concise stories demonstrating product integration into real-life contexts",
+      "implementation": [
+        "Limit to 3-5 sentences for maximum impact",
+        "Use first-person perspective for authenticity",
+        "Include specific time/place details to create immediacy",
+        "Focus on one key product attribute per mini-narrative"
+      ],
+      "example": "Saturday morning. Toddler fever spike. Fumbling for the thermometer in the dark while trying not to wake the finally-sleeping baby. One-handed operation actually worked as advertised. Reading appeared in three seconds. Back to bed with appropriate medication and minimal drama.",
+      "best_practices": [
+        "Use micro-narratives where they naturally fit the product experience",
+        "Select realistic scenarios that demonstrate unique product value",
+        "Balance narrative detail with brevity for maximum impact"
+      ]
+    },
+    "emotional_journey_mapping": {
+      "description": "Technique for documenting emotional states associated with product usage",
+      "structure": [
+        "Before state (frustration, anticipation, concern)",
+        "During usage (realization, surprise, confirmation)",
+        "After state (relief, satisfaction, disappointment)"
+      ],
+      "implementation": [
+        "Connect emotions to universal experiences using relatable language",
+        "Use emotional transitions to highlight product strengths/weaknesses",
+        "Keep emotional descriptions concise and authentic"
+      ],
+      "example": "The relief when this thermometer gave consistent readings ended three days of parental anxiety gymnastics."
+    },
+    "comparison_narratives": {
+      "description": "Structured narratives for comparing product reality with expectations",
+      "formats": {
+        "better_than_worse_than": {
+          "description": "Direct comparisons with related products or expectations",
+          "example": "Better than standard measuring cups for precision, worse than digital scales for accuracy"
+        },
+        "promise_vs_delivery": {
+          "description": "Contrasting marketing claims with actual performance",
+          "example": "Promises effortless installation; delivers a weekend project requiring three trips to the hardware store"
+        }
+      },
+      "best_practices": [
+        "Use consistent framework throughout a single review",
+        "Select framework that best highlights key product insights",
+        "Ensure comparisons use simple sentence structure for clarity"
+      ]
+    },
+    "strategic_placement": {
+      "description": "Optimal locations for different narrative elements within reviews",
+      "placements": [
+        {
+          "section": "Opening Hook",
+          "narrative_elements": "Brief emotional context, problem statement, or discovery moment",
+          "purpose": "Create immediate engagement and establish relevance"
+        },
+        {
+          "section": "Experiential Content",
+          "narrative_elements": "Detailed micro-narratives showing product in use",
+          "purpose": "Demonstrate practical application and real-world value"
+        },
+        {
+          "section": "Evaluation Sections",
+          "narrative_elements": "Comparative mini-stories highlighting pros/cons",
+          "purpose": "Provide concrete examples that illustrate strengths and limitations"
+        },
+        {
+          "section": "Verdict",
+          "narrative_elements": "Narrative closure with resolution of initial problem",
+          "purpose": "Create satisfying conclusion that references opening context"
+        }
+      ]
+    }
+  },
+  "sensory_crafting_framework": {
+    "description": "A structured approach to ensure multiple sensory dimensions are captured in product reviews",
+    "principles": [
+      "Product experiences engage all senses and reviews should reflect this",
+      "Different product categories activate different primary senses",
+      "Multi-sensory descriptions create more vivid product understanding"
+    ],
+    "implementation": {
+      "steps": [
+        {
+          "action": "Identify primary sensory dimensions for product category",
+          "categories": [
+            {
+              "name": "Visual",
+              "relevance": "High/Medium/Low",
+              "aspects": "Appearance, color, finish, design elements"
+            },
+            {
+              "name": "Tactile",
+              "relevance": "High/Medium/Low",
+              "aspects": "Texture, weight, temperature, ergonomics"
+            },
+            {
+              "name": "Auditory",
+              "relevance": "High/Medium/Low",
+              "aspects": "Sounds during operation, acoustic properties"
+            },
+            {
+              "name": "Olfactory",
+              "relevance": "High/Medium/Low",
+              "aspects": "Scent, smell during use, off-gassing"
+            }
+          ]
+        },
+        {
+          "action": "Document sensory experiences throughout testing process",
+          "guidance": [
+            "Capture immediate sensory impressions during first use",
+            "Note unexpected sensory elements that differ from expectations",
+            "Track sensory changes over extended use period"
+          ]
+        },
+        {
+          "action": "Integrate sensory details strategically in review sections",
+          "placements": [
+            "Opening narrative (strongest sensory impression)",
+            "Technical descriptions (unexpected sensory elements)",
+            "User experience (how sensory elements affect usage)"
+          ]
+        }
+      ]
+    },
+    "product_category_priorities": [
+      {
+        "category": "Food/Beverage Products",
+        "primary_senses": ["Taste", "Smell", "Visual"],
+        "example": "The kernels pop into perfect golden spheres with a nutty aroma that hints at their buttery flavor potential."
+      },
+      {
+        "category": "Fabrics/Clothing",
+        "primary_senses": ["Tactile", "Visual"],
+        "example": "The microfiber cloth feels impossibly smooth against skin while remaining visibly resilient after washing."
+      },
+      {
+        "category": "Electronics",
+        "primary_senses": ["Visual", "Auditory", "Tactile"],
+        "example": "The matte finish resists fingerprints while the mechanical keys provide a satisfying tactile click without excessive noise."
+      }
+    ],
+    "multi_sensory_integration": {
+      "description": "Techniques for combining multiple sensory dimensions in descriptions",
+      "techniques": [
+        "Connect sensory details to practical benefits",
+        "Link unexpected sensory characteristics to product quality",
+        "Describe how sensory elements affect overall experience"
+      ],
+      "example": "The silicone grip eliminates that plastic-on-countertop clatter that wakes sleeping babies while providing a non-slip surface even with wet hands."
+    }
+  },
+  "value_integration_framework": {
+    "description": "A systematic approach to incorporating practical value throughout reviews",
+    "value_categories": {
+      "price_performance_analysis": {
+        "implementation": [
+          "Calculate cost per use/serving when relevant",
+          "Compare price directly with alternatives",
+          "Assess long-term value beyond initial purchase"
+        ],
+        "example": "At $12.50 for 100 servings, it's more than twice as cost-effective as the Enfamil brand per use."
+      },
+      "usage_optimization": {
+        "implementation": [
+          "Provide specific tips to maximize product value",
+          "Share discovered techniques not in official instructions",
+          "Warn about potential costly mistakes"
+        ],
+        "example": "The binky method works perfectly for us. Place a single drop on the pacifier tip, pop it in baby's mouth, and you're done."
+      },
+      "compatibility_insights": {
+        "implementation": [
+          "Test and document compatibility with related products",
+          "Highlight unexpected compatibility issues",
+          "Provide workarounds for common problems"
+        ],
+        "example": "While you can add it to a bottle, remember that if your baby doesn't finish, that precious vitamin D gets left behind."
+      }
+    },
+    "integration": [
+      "Distribute practical value elements throughout the review",
+      "Connect value insights directly to user scenarios",
+      "Balance technical value with experiential value"
+    ],
+    "value_narrative_connection": {
+      "description": "Techniques for embedding value insights within narrative elements",
+      "implementation": [
+        "Frame value calculations within real-world scenarios",
+        "Present compatibility discoveries as problem-solution narratives",
+        "Embed usage tips within experiential anecdotes"
+      ],
+      "example": "After calculating that we'd spent nearly $200 on disposable thermometers over two cold/flu seasons, the $35 investment in this reusable model made perfect financial sense."
+    }
+  },
+  "creative_element_distribution": {
+    "description": "Strategic placement of creative elements throughout the review structure",
+    "distribution_principles": [
+      "Strategic distribution enhances effectiveness more than quantity",
+      "Different review sections benefit from different creative elements",
+      "Balance creative complexity with information complexity",
+      "Optimize impact by placing creative elements at strategic anchor points"
+    ],
+    "section_specific_approaches": [
+      {
+        "section": "Opening/Introduction",
+        "recommended_elements": [
+          "Strong thematic establishment",
+          "Emotional context",
+          "Problem-solution setup",
+          "Brief sensory hooks"
+        ],
+        "balance_guidance": "Higher creative density (2-3 creative elements)"
+      },
+      {
+        "section": "Technical Content",
+        "recommended_elements": [
+          "Minimal thematic references",
+          "Selective sensory details for clarification",
+          "Limited narrative elements"
+        ],
+        "balance_guidance": "Lower creative density (1 creative element per 3-4 information points)"
+      },
+      {
+        "section": "Experiential Content",
+        "recommended_elements": [
+          "Micro-narratives demonstrating usage",
+          "Rich sensory details",
+          "Moderate thematic presence",
+          "Value integration"
+        ],
+        "balance_guidance": "Medium creative density (1-2 creative elements per paragraph)"
+      },
+      {
+        "section": "Evaluation Content",
+        "recommended_elements": [
+          "Comparative narrative elements",
+          "Value framing",
+          "Selective thematic references"
+        ],
+        "balance_guidance": "Medium-low creative density (enhance 30-40% of evaluation points)"
+      },
+      {
+        "section": "Verdict/Conclusion",
+        "recommended_elements": [
+          "Thematic callback",
+          "Emotional resolution",
+          "Value reinforcement"
+        ],
+        "balance_guidance": "Medium-high creative density (1-2 creative elements)"
+      }
+    ],
+    "flow_considerations": [
+      "Vary creative technique types throughout review for freshness",
+      "Create connections between creative elements for cohesion",
+      "Use thematic vocabulary consistently across creative elements",
+      "Consider creative element intensity progression (start strong, moderate middle, strong end)"
+    ]
+  },
+  "cognitive_accessibility_guidelines": {
+    "description": "Ensuring narrative and sensory elements enhance rather than complicate understanding",
+    "principles": [
+      "Creative elements should clarify rather than obscure key information",
+      "Sensory descriptions should create immediate understanding",
+      "Narratives should follow logical, easy-to-follow sequences",
+      "Value insights should be explicit rather than requiring inference"
+    ],
+    "implementation_checks": [
+      {
+        "check": "Clarity Enhancement",
+        "question": "Does this creative element help the reader understand the product better?",
+        "acceptance": "Element creates immediate visual/conceptual understanding"
+      },
+      {
+        "check": "Cognitive Load",
+        "question": "Does this element require significant mental processing to understand?",
+        "acceptance": "Element can be processed without disrupting information flow"
+      },
+      {
+        "check": "Information Connection",
+        "question": "Is the connection between creative element and product feature clear?",
+        "acceptance": "Element directly connects to specific product characteristic"
+      },
+      {
+        "check": "Memorability Enhancement",
+        "question": "Does this element make the information more memorable?",
+        "acceptance": "Element creates distinctive mental image or concept"
+      }
+    ],
+    "accessibility_techniques": [
+      {
+        "technique": "Concrete Over Abstract",
+        "description": "Using concrete, specific imagery rather than abstract concepts",
+        "examples": {
+          "abstract": "The interface provides an elegant experience",
+          "concrete": "The interface responds with the immediate precision of a light switch flipping on"
+        }
+      },
+      {
+        "technique": "Familiar Reference Points",
+        "description": "Using common experiences as reference points for unfamiliar concepts",
+        "examples": {
+          "unfamiliar": "The 70ml capacity is perfect for precise measurements",
+          "accessible": "The 70ml capacity (about the size of a shot glass) is perfect for precise measurements"
+        }
+      },
+      {
+        "technique": "Progressive Complexity",
+        "description": "Introducing simpler creative elements before more complex ones",
+        "implementation": "Start with straightforward comparisons before using extended metaphors or thematic elements"
+      }
+    ]
+  },
+  "audience_adaptation_guidelines": {
+    "description": "Adapting narrative and sensory approaches based on target audience",
+    "audience_considerations": [
+      {
+        "audience": "Technical/Professional Users",
+        "narrative_guidance": [
+          "Focus on problem-solution narratives",
+          "Use industry-specific reference points",
+          "Emphasize efficiency and professional outcomes"
+        ],
+        "sensory_focus": [
+          "Precision aspects of tactile experience",
+          "Functional auditory cues",
+          "Professional environmental context"
+        ]
+      },
+      {
+        "audience": "Lifestyle/Casual Users",
+        "narrative_guidance": [
+          "Emphasize experiential and emotional narratives",
+          "Use everyday reference points",
+          "Focus on lifestyle integration stories"
+        ],
+        "sensory_focus": [
+          "Aesthetic visual aspects",
+          "Comfort and pleasure dimensions",
+          "Sensory harmony with environments"
+        ]
+      },
+      {
+        "audience": "Practical/Value-Focused Users",
+        "narrative_guidance": [
+          "Prioritize value and efficiency narratives",
+          "Use cost-benefit story structures",
+          "Focus on practical problem-solving scenarios"
+        ],
+        "sensory_focus": [
+          "Durability tactile aspects",
+          "Efficiency indicators",
+          "Practical integration with existing items"
+        ]
+      }
+    ],
+    "implementation_guidance": [
+      "Consider the primary user persona when selecting narrative approaches",
+      "Adapt sensory emphasis based on audience priorities",
+      "Select value aspects most relevant to target audience",
+      "Match creative element complexity to audience expectations"
+    ]
+  }
+}

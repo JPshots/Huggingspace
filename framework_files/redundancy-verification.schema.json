@@ -1,0 +1,97 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://amazon-review-framework.com/schemas/redundancy-verification.schema.json",
+    "title": "Redundancy Verification",
+    "description": "Framework for identifying and eliminating unnecessary repetition in reviews",
+    "type": "object",
+    "required": ["section_specialization", "information_progression", "checkpoints", "resolution_strategies"],
+    "properties": {
+      "section_specialization": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "priority": { "$ref": "../common-definitions.schema.json#/definitions/priority" },
+            "guideline": { "type": "string" }
+          }
+        }
+      },
+      "information_progression": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "priority": { "$ref": "../common-definitions.schema.json#/definitions/priority" },
+            "guideline": { "type": "string" }
+          }
+        }
+      },
+      "format_differentiation": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "priority": { "$ref": "../common-definitions.schema.json#/definitions/priority" },
+            "guideline": { "type": "string" }
+          }
+        }
+      },
+      "strategic_exceptions": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "priority": { "$ref": "../common-definitions.schema.json#/definitions/priority" },
+            "guideline": { "type": "string" }
+          }
+        }
+      },
+      "checkpoints": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+      "resolution_strategies": {
+        "type": "object",
+        "properties": {
+          "optimal_placement": {
+            "type": "object",
+            "properties": {
+              "description": { "type": "string" },
+              "implementation": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+            }
+          },
+          "dimension_addition": {
+            "type": "object",
+            "properties": {
+              "description": { "type": "string" },
+              "implementation": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+              "example": {
+                "type": "object",
+                "properties": {
+                  "first_mention": { "type": "string" },
+                  "second_mention": { "type": "string" }
+                }
+              }
+            }
+          },
+          "phrasal_variation": {
+            "type": "object",
+            "properties": {
+              "description": { "type": "string" },
+              "implementation": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+              "example": {
+                "type": "object",
+                "properties": {
+                  "variation1": { "type": "string" },
+                  "variation2": { "type": "string" },
+                  "variation3": { "type": "string" }
+                }
+              }
+            }
+          }
+        }
+      },
+      "implementation_process": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+      "framework_relationships": {
+        "type": "array",
+        "items": { "$ref": "../common-definitions.schema.json#/definitions/componentReference" }
+      }
+    }
+  }

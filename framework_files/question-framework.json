@@ -1,0 +1,274 @@
+{
+  "question_framework": {
+    "description": "Systematic approach for gathering comprehensive product information through strategic questioning",
+    "workflow_integration": "This framework must be completed entirely before initiating the drafting process in writing_process.json",
+    "mandatory_requirement": {
+      "rule": "The first round of questions should be asked before any review draft begins",
+      "procedure": [
+        "Compile all initial questions based on contextual gaps",
+        "Present all questions in a single consolidated query",
+        "Await responses before proceeding with review"
+      ],
+      "guidance": [
+        "Focus on strategic questions with highest information value",
+        "Prioritize questions that unlock multiple insights",
+        "Avoid asking about information already provided"
+      ]
+    },
+    "core_principles": [
+      {
+        "name": "intelligentContextGathering",
+        "definition": "Systematically identifying and filling information gaps while avoiding redundancy",
+        "implementation": [
+          "Track information already provided to prevent redundant questions",
+          "Prioritize questions that reveal product differentiation points",
+          "Focus on areas where product understanding is incomplete"
+        ]
+      },
+      {
+        "name": "purposefulInsightGeneration",
+        "definition": "Asking questions that reveal unexpected benefits, limitations, or use cases",
+        "implementation": [
+          "Target questions toward potential hidden features or limitations",
+          "Seek information about edge cases and unusual scenarios",
+          "Probe for surprising discoveries during product testing"
+        ]
+      },
+      {
+        "name": "narrativeDrivenInquiry",
+        "definition": "Questions that help develop memorable stories and experiences",
+        "implementation": [
+          "Ask about specific incidents that reveal product characteristics",
+          "Probe for emotionally resonant experiences with the product",
+          "Seek information about how the product affected daily routines"
+        ]
+      }
+    ]
+  },
+  "contextual_gaps_framework": {
+    "description": "Framework for identifying and categorizing information needs",
+    "gap_categories": [
+      {
+        "name": "criticalGaps",
+        "definition": "Information essential to making a purchase decision",
+        "examples_reference": "examples-templates.json > question_examples > critical_gaps",
+        "priority": "highest"
+      },
+      {
+        "name": "differentialGaps",
+        "definition": "Information that reveals how this product differs from alternatives",
+        "examples_reference": "examples-templates.json > question_examples > differential_gaps",
+        "priority": "high"
+      },
+      {
+        "name": "experienceGaps",
+        "definition": "Information about real-world usage that can't be found in product descriptions",
+        "examples_reference": "examples-templates.json > question_examples > experience_gaps",
+        "priority": "medium"
+      },
+      {
+        "name": "edgeCaseGaps",
+        "definition": "Information about uncommon but important usage scenarios",
+        "examples_reference": "examples-templates.json > question_examples > edge_case_gaps",
+        "priority": "medium-low"
+      }
+    ],
+    "process": [
+      "Identify all gaps in product understanding using the contextual gaps framework",
+      "Score potential questions using the prioritization framework",
+      "Select highest-value questions while ensuring comprehensive coverage",
+      "Track all information received to prevent redundant questioning",
+      "Present all initial questions before any draft attempt"
+    ]
+  },
+  "question_prioritization_framework": {
+    "description": "System for selecting highest-value questions based on multiple criteria",
+    "scoring_criteria": [
+      {
+        "name": "informationValue",
+        "description": "How likely the question is to reveal unique information",
+        "scoring_guide": [
+          {
+            "value": 0,
+            "level": "Information already explicitly provided"
+          },
+          {
+            "value": 1,
+            "level": "Information that can be inferred from existing data"
+          },
+          {
+            "value": 2,
+            "level": "New information with limited significance"
+          },
+          {
+            "value": 3,
+            "level": "New information with moderate significance"
+          },
+          {
+            "value": 4,
+            "level": "Critical new information that fills important gaps"
+          },
+          {
+            "value": 5,
+            "level": "High-value information that unlocks multiple insights"
+          }
+        ]
+      },
+      {
+        "name": "reviewImpact",
+        "description": "How significantly the answer would influence the final review",
+        "scoring_guide": [
+          {
+            "value": 1,
+            "level": "Minimal impact on review quality or content"
+          },
+          {
+            "value": 2,
+            "level": "Slight enhancement to review detail"
+          },
+          {
+            "value": 3,
+            "level": "Moderate improvement to review comprehensiveness"
+          },
+          {
+            "value": 4,
+            "level": "Significant enhancement to review value"
+          },
+          {
+            "value": 5,
+            "level": "Critical information that transforms review quality"
+          }
+        ]
+      },
+      {
+        "name": "keywordPotential",
+        "description": "Will the answer likely contain valuable search terms?",
+        "scoring_guide": [
+          {
+            "value": 1,
+            "level": "Unlikely to generate relevant keywords"
+          },
+          {
+            "value": 2,
+            "level": "May generate common keywords"
+          },
+          {
+            "value": 3,
+            "level": "Likely to generate category-specific keywords"
+          },
+          {
+            "value": 4,
+            "level": "High potential for unique, high-value keywords"
+          },
+          {
+            "value": 5,
+            "level": "Exceptional potential for distinctive search terms"
+          }
+        ]
+      },
+      {
+        "name": "experienceIllumination",
+        "description": "How well might the question reveal authentic experiences",
+        "scoring_guide": [
+          {
+            "value": 1,
+            "level": "Unlikely to elicit experiential information"
+          },
+          {
+            "value": 2,
+            "level": "May generate basic experiential details"
+          },
+          {
+            "value": 3,
+            "level": "Likely to reveal meaningful usage experiences"
+          },
+          {
+            "value": 4,
+            "level": "Strong potential for compelling narrative elements"
+          },
+          {
+            "value": 5,
+            "level": "Exceptional potential for signature storytelling moments"
+          }
+        ]
+      }
+    ],
+    "selection_process": [
+      "Generate initial question pool covering all product aspects",
+      "Score each question using the prioritization criteria",
+      "Calculate total score for each question (sum of all criteria)",
+      "Select highest-scoring questions that cover different information domains",
+      "Eliminate redundant questions that would yield similar information",
+      "Ensure questions address all critical information gaps"
+    ]
+  },
+  "strategic_question_library": {
+    "description": "Categorized collection of high-value questions by purpose",
+    "categories": [
+      {
+        "name": "productDifferentiation",
+        "questions_reference": "examples-templates.json > question_library > differentiation_questions"
+      },
+      {
+        "name": "usageExperience",
+        "questions_reference": "examples-templates.json > question_library > experience_questions"
+      },
+      {
+        "name": "valueAssessment",
+        "questions_reference": "examples-templates.json > question_library > value_questions"
+      },
+      {
+        "name": "technicalValidation",
+        "questions_reference": "examples-templates.json > question_library > technical_questions"
+      }
+    ],
+    "implementation_guidance": "Select at least one question from each category to ensure comprehensive coverage"
+  },
+  "information_tracking_system": {
+    "description": "Framework for monitoring information collection to prevent redundancy",
+    "categories": [
+      {
+        "name": "technicalSpecifications",
+        "tracking_elements": [
+          "materials_and_construction",
+          "dimensions_and_measurements",
+          "performance_metrics",
+          "compatibility_information"
+        ]
+      },
+      {
+        "name": "userExperience",
+        "tracking_elements": [
+          "ease_of_use_observations",
+          "learning_curve_details",
+          "comfort_and_ergonomics",
+          "integration_with_daily_routines"
+        ]
+      },
+      {
+        "name": "comparativeInsights",
+        "tracking_elements": [
+          "similar_products_used",
+          "relative_strengths_and_weaknesses",
+          "value_proposition_assessment",
+          "competitive_positioning"
+        ]
+      },
+      {
+        "name": "useCases",
+        "tracking_elements": [
+          "primary_intended_uses",
+          "secondary_applications",
+          "unexpected_uses_discovered",
+          "usage_frequency_and_patterns"
+        ]
+      }
+    ],
+    "implementation_guidance": [
+      "Before asking a question, check if information exists in tracking system",
+      "After receiving information, update relevant tracking categories",
+      "Periodically review tracking system to identify remaining gaps",
+      "Use tracking data to inform follow-up questions when needed"
+    ]
+  }
+}

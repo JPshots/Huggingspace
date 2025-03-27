@@ -1,0 +1,136 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://amazon-review-framework.com/schemas/keyword-strategy.schema.json",
+    "title": "Keyword Strategy",
+    "description": "Framework for strategically incorporating search-optimized keywords in reviews",
+    "type": "object",
+    "required": ["core_principles", "keyword_categories", "implementation_process", "placement_strategy"],
+    "properties": {
+      "core_principles": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+      "keyword_categories": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["name", "description", "search_intent", "priority", "implementation"],
+          "properties": {
+            "name": { "type": "string" },
+            "description": { "type": "string" },
+            "examples": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+            "search_intent": { "type": "string" },
+            "priority": { "type": "string" },
+            "implementation": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+          }
+        }
+      },
+      "implementation_process": {
+        "type": "object",
+        "required": ["description", "pre_review_keyword_brainstorm"],
+        "properties": {
+          "description": { "type": "string" },
+          "integration_points": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+          "pre_review_keyword_brainstorm": {
+            "type": "object",
+            "required": ["description", "steps"],
+            "properties": {
+              "description": { "type": "string" },
+              "steps": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["action", "questions", "output"],
+                  "properties": {
+                    "action": { "type": "string" },
+                    "questions": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+                    "output": { "type": "string" }
+                  }
+                }
+              }
+            }
+          },
+          "keyword_selection_criteria": {
+            "type": "object",
+            "properties": {
+              "description": { "type": "string" },
+              "criteria": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": { "type": "string" },
+                    "description": { "type": "string" },
+                    "importance": { "type": "string" },
+                    "assessment": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "placement_strategy": {
+        "type": "object",
+        "required": ["description", "high_impact_placements"],
+        "properties": {
+          "description": { "type": "string" },
+          "high_impact_placements": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["location", "keywords", "guidelines"],
+              "properties": {
+                "location": { "type": "string" },
+                "keywords": { "type": "string" },
+                "guidelines": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+              }
+            }
+          }
+        }
+      },
+      "natural_integration_techniques": {
+        "type": "object",
+        "properties": {
+          "description": { "type": "string" },
+          "techniques": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": { "type": "string" },
+                "description": { "type": "string" },
+                "example": {
+                  "type": "object",
+                  "properties": {
+                    "awkward": { "type": "string" },
+                    "natural": { "type": "string" }
+                  }
+                },
+                "implementation": { "type": "string" }
+              }
+            }
+          }
+        }
+      },
+      "verification_framework": {
+        "type": "object",
+        "properties": {
+          "description": { "type": "string" },
+          "pre_submission_checks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "check": { "type": "string" },
+                "method": { "type": "string" },
+                "acceptance": { "type": "string" }
+              }
+            }
+          }
+        }
+      },
+      "best_practices": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+      "framework_relationships": {
+        "type": "array",
+        "items": { "$ref": "../common-definitions.schema.json#/definitions/componentReference" }
+      }
+    }
+  }

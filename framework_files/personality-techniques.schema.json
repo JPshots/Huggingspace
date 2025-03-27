@@ -1,0 +1,133 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://amazon-review-framework.com/schemas/personality-techniques.schema.json",
+    "title": "Personality Techniques",
+    "description": "Specific creative approaches for adding personality to reviews",
+    "type": "object",
+    "required": ["techniques", "figurative_language_implementation"],
+    "properties": {
+      "techniques": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["name", "description"],
+          "properties": {
+            "name": { "type": "string" },
+            "description": { "type": "string" },
+            "example": { "type": "string" },
+            "frequency": { "type": "string" },
+            "best_for": { "type": "string" }
+          }
+        }
+      },
+      "figurative_language_implementation": {
+        "type": "object",
+        "required": ["description", "analogy_guidelines"],
+        "properties": {
+          "description": { "type": "string" },
+          "analogy_guidelines": {
+            "type": "object",
+            "properties": {
+              "principle": { "type": "string" },
+              "examples": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "analogy": { "type": "string" },
+                    "strength": { "type": "string" }
+                  }
+                }
+              },
+              "vivid_imagery": {
+                "type": "object",
+                "properties": {
+                  "description": { "type": "string" },
+                  "categories": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "name": { "type": "string" },
+                        "examples": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+                        "application": { "type": "string" }
+                      }
+                    }
+                  },
+                  "principles": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+                }
+              }
+            }
+          },
+          "natural_humor_techniques": {
+            "type": "object",
+            "properties": {
+              "description": { "type": "string" },
+              "principles": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+              "techniques": {
+                "type": "object",
+                "properties": {
+                  "embedded_metaphors": {
+                    "type": "object",
+                    "properties": {
+                      "description": { "type": "string" },
+                      "examples": {
+                        "type": "object",
+                        "properties": {
+                          "weak": { "type": "string" },
+                          "strong": { "type": "string" }
+                        }
+                      }
+                    }
+                  },
+                  "descriptive_hyperbole": {
+                    "type": "object",
+                    "properties": {
+                      "description": { "type": "string" },
+                      "examples": {
+                        "type": "object",
+                        "properties": {
+                          "weak": { "type": "string" },
+                          "strong": { "type": "string" }
+                        }
+                      }
+                    }
+                  },
+                  "functional_similes": {
+                    "type": "object",
+                    "properties": {
+                      "description": { "type": "string" },
+                      "examples": {
+                        "type": "object",
+                        "properties": {
+                          "weak": { "type": "string" },
+                          "strong": { "type": "string" }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "implementation": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+            }
+          },
+          "implementation_sequence": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+        }
+      },
+      "strategic_placement": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "location": { "type": "string" },
+            "creative_elements": { "type": "string" },
+            "purpose": { "type": "string" }
+          }
+        }
+      },
+      "framework_relationships": {
+        "type": "array",
+        "items": { "$ref": "../common-definitions.schema.json#/definitions/componentReference" }
+      }
+    }
+  }

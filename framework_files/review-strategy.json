@@ -1,0 +1,124 @@
+{
+  "review_goal": {
+    "primary": "Get invited to Amazon Vine program",
+    "strategies": [
+      "Write the most helpful reviews possible",
+      "Provide genuine, comprehensive product insights"
+    ]
+  },
+  "core_principles": [
+    {
+      "principle": "Information First, Personality Second",
+      "description": "Essential information must never be sacrificed for style",
+      "implementation": "Always place factual content before personality elements"
+    },
+    {
+      "principle": "Authentic Experience Over Marketing Language",
+      "description": "Share genuine experiences rather than manufactured enthusiasm",
+      "implementation": "Document specific incidents, limitations, and realistic usage"
+    },
+    {
+      "principle": "Buyer-Focused Perspective",
+      "description": "Content serves potential buyers rather than personal expression",
+      "implementation": "Address common buyer concerns and decision factors"
+    },
+    {
+      "principle": "Strategic Structure",
+      "description": "Organization enhances information accessibility",
+      "implementation": "Use consistent, scannable format with clear section purpose"
+    },
+    {
+      "principle": "Testing Depth",
+      "description": "Comprehensive testing across multiple scenarios",
+      "implementation": "Test product in varied contexts beyond primary use case"
+    }
+  ],
+  "value_drivers": [
+    {
+      "driver": "Authentic Personal Experience",
+      "description": "Genuine testing and usage provides credibility and insight",
+      "implementation": [
+        "Include specific usage scenarios with contextual details",
+        "Document real-world application beyond theoretical use",
+        "Share unexpected discoveries during testing"
+      ],
+      "examples": [
+        "After three years of struggling with butterfly popcorn dissolving on contact, these mushroom kernels...",
+        "The silicone grip eliminates that plastic-on-countertop clatter that wakes sleeping babies."
+      ]
+    },
+    {
+      "driver": "Comprehensive Information",
+      "description": "Complete product understanding that goes beyond surface details",
+      "implementation": [
+        "Cover technical specifications with actual measurements",
+        "Discuss performance across multiple use cases",
+        "Address both expected and unexpected applications"
+      ],
+      "examples": [
+        "The 70ml capacity and dual measurement systems (oz/ml) make it perfect for precise coffee measurement.",
+        "At $8 per bag with an average 15-use lifespan, each popcorn session costs about 53 cents."
+      ]
+    },
+    {
+      "driver": "Strategic Balance",
+      "description": "Optimized mix of information and personality creates engaging, helpful content",
+      "implementation": [
+        "Maintain 55% informational, 40% personality, 5% flexibility ratio",
+        "Front-load information before adding personality",
+        "Adjust balance based on product category and section purpose"
+      ],
+      "reference": "personality-balance.json > content_ratios"
+    },
+    {
+      "driver": "Differentiated Insight",
+      "description": "Unique perspectives that distinguish review from standard content",
+      "implementation": [
+        "Test product in unconventional scenarios",
+        "Compare with alternatives not mentioned in product description",
+        "Document edge cases and performance limitations"
+      ],
+      "examples": [
+        "Unlike our nearly indestructible glass baby bottles that laugh in the face of gravity...",
+        "While standard air poppers don't create the same perfect spheres, the cannon method gives you popcorn with architectural integrity."
+      ]
+    }
+  ],
+  "success_metrics": {
+    "quantitative": [
+      {
+        "metric": "Helpful Votes",
+        "description": "Number of readers who found review useful",
+        "target": "Top 10% of category reviews"
+      },
+      {
+        "metric": "Length Effectiveness Ratio",
+        "description": "Helpful votes per word count",
+        "target": "Maximum value delivered with optimal length"
+      },
+      {
+        "metric": "Search Visibility",
+        "description": "Review appears in product search results",
+        "target": "Inclusion of strategic keywords that maintain natural flow"
+      }
+    ],
+    "qualitative": [
+      {
+        "metric": "Information Completeness",
+        "description": "Review answers potential buyer questions",
+        "assessment": "Review addresses all critical information gaps identified"
+      },
+      {
+        "metric": "Authentic Voice",
+        "description": "Review reads as genuine user experience",
+        "assessment": "Passes authentic voice guidelines verification",
+        "reference": "personality-balance.json > authentic_voice_guidelines"
+      },
+      {
+        "metric": "Purchase Guidance Clarity",
+        "description": "Review helps reader make informed decision",
+        "assessment": "Clear identification of ideal and non-ideal users"
+      }
+    ]
+  }
+}

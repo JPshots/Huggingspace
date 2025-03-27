@@ -1,0 +1,306 @@
+{
+  "core_principles": [
+    "Write for humans first, algorithms second",
+    "Use keywords naturally throughout the review",
+    "Think like a buyer when selecting keywords",
+    "Focus on providing context around keywords"
+  ],
+  "keyword_categories": [
+    {
+      "name": "primaryKeywords",
+      "description": "What someone would type to find this product",
+      "examples_reference": "examples-templates.json > keyword_examples > primary_keywords",
+      "search_intent": "Users looking for the specific product or category",
+      "priority": "highest",
+      "implementation": [
+        "Include in review title",
+        "Use in opening paragraph",
+        "Repeat naturally 2-3 times throughout review"
+      ]
+    },
+    {
+      "name": "featureKeywords",
+      "description": "Specific features or benefits searchers look for",
+      "examples_reference": "examples-templates.json > keyword_examples > feature_keywords",
+      "search_intent": "Users seeking products with specific attributes",
+      "priority": "high",
+      "implementation": [
+        "Include in feature descriptions",
+        "Use when discussing product performance"
+      ]
+    },
+    {
+      "name": "comparisonKeywords",
+      "description": "Terms related to alternatives and competitors",
+      "examples_reference": "examples-templates.json > keyword_examples > comparison_keywords",
+      "search_intent": "Users comparing products before purchase decision",
+      "priority": "medium",
+      "implementation": [
+        "Use when directly comparing with alternatives",
+        "Include in evaluation sections"
+      ]
+    },
+    {
+      "name": "compatibilityKeywords",
+      "description": "Terms about what the product works with",
+      "examples_reference": "examples-templates.json > keyword_examples > compatibility_keywords",
+      "search_intent": "Users verifying product will work with existing equipment",
+      "priority": "medium-high",
+      "implementation": [
+        "Include in technical or compatibility sections",
+        "Use when discussing integration with other products"
+      ]
+    },
+    {
+      "name": "traditionalSolutionKeywords",
+      "description": "Terms about what the product replaces or improves upon",
+      "examples_reference": "examples-templates.json > keyword_examples > traditional_solution_keywords",
+      "search_intent": "Users looking to upgrade from traditional methods",
+      "priority": "medium",
+      "implementation": [
+        "Include when discussing how product improves upon older methods",
+        "Use in experiential narratives about product benefits"
+      ]
+    },
+    {
+      "name": "accessoryKeywords",
+      "description": "Terms about additional items that complement the product",
+      "examples_reference": "examples-templates.json > keyword_examples > accessory_keywords",
+      "search_intent": "Users looking to complete their purchase with accessories",
+      "priority": "low-medium",
+      "implementation": [
+        "Include when discussing ecosystem or add-ons",
+        "Use in practical advice sections"
+      ]
+    },
+    {
+      "name": "problemSolutionKeywords",
+      "description": "Terms related to specific pain points the product addresses",
+      "examples_reference": "examples-templates.json > keyword_examples > problem_solution_keywords",
+      "search_intent": "Users seeking solutions to specific problems",
+      "priority": "high",
+      "implementation": [
+        "Include in experiential or solution-focused sections",
+        "Use when describing specific use cases"
+      ]
+    }
+  ],
+  "implementation_process": {
+    "description": "Systematic approach to keyword identification and placement",
+    "integration_points": [
+      "See content-structure.json > core_elements for optimal keyword placement locations",
+      "See writing-process.json > initial_capture_and_analysis for keyword identification workflow"
+    ],
+    "pre_review_keyword_brainstorm": {
+      "description": "Process for identifying potential keywords before writing begins",
+      "steps": [
+        {
+          "action": "identifyPrimaryKeywords",
+          "questions": [
+            "What would someone type to find this specific product?",
+            "What general category does this product belong to?"
+          ],
+          "output": "List of 3-5 primary category and product keywords"
+        },
+        {
+          "action": "listFeatureKeywords",
+          "questions": [
+            "What specific features would buyers search for?",
+            "What technical specifications matter most?",
+            "What performance aspects would be searched?"
+          ],
+          "output": "List of 5-8 feature and specification keywords"
+        },
+        {
+          "action": "identifyComparisonKeywords",
+          "questions": [
+            "What are the main competing products or brands?",
+            "What might someone type when comparing options?"
+          ],
+          "output": "List of 2-4 comparative keywords or phrases"
+        },
+        {
+          "action": "listCompatibilityKeywords",
+          "questions": [
+            "What devices/systems/products does this work with?",
+            "What compatibility issues might users search for?"
+          ],
+          "output": "List of 2-4 compatibility-focused keywords"
+        },
+        {
+          "action": "identifyProblemSolutionKeywords",
+          "questions": [
+            "What specific problems does this product solve?",
+            "What frustrations might lead someone to search for this?"
+          ],
+          "output": "List of 3-5 problem-solution keyword phrases"
+        }
+      ]
+    },
+    "keyword_selection_criteria": {
+      "description": "Framework for prioritizing which keywords to include",
+      "criteria": [
+        {
+          "name": "searchVolume",
+          "description": "How frequently the term is searched",
+          "importance": "medium",
+          "assessment": "Based on reviewer's knowledge of product category"
+        },
+        {
+          "name": "relevance",
+          "description": "How closely the keyword relates to the product's core purpose",
+          "importance": "highest",
+          "assessment": "Directly relates to primary product function or key differentiator"
+        },
+        {
+          "name": "differentiation",
+          "description": "How well the keyword helps distinguish from similar products",
+          "importance": "high",
+          "assessment": "Highlights unique aspects or specific strengths"
+        },
+        {
+          "name": "searchability",
+          "description": "How likely buyers are to use this exact term",
+          "importance": "medium-high",
+          "assessment": "Uses common terminology rather than jargon when possible"
+        }
+      ]
+    }
+  },
+  "placement_strategy": {
+    "description": "Strategic locations within review for keyword placement",
+    "high_impact_placements": [
+      {
+        "location": "reviewTitle",
+        "keywords": "1-2 primary keywords",
+        "guidelines": [
+          "Include most important primary keyword",
+          "Keep natural and benefit-focused",
+          "Avoid keyword stuffing in title"
+        ]
+      },
+      {
+        "location": "openingParagraph",
+        "keywords": "Primary keywords, problem-solution keywords",
+        "guidelines": [
+          "Introduce primary keywords naturally",
+          "Set context with product category terms",
+          "Avoid awkward phrasing to include keywords"
+        ]
+      },
+      {
+        "location": "featureDescriptions",
+        "keywords": "Feature keywords, technical specification terms",
+        "guidelines": [
+          "Use specific feature terminology",
+          "Include measurement units and specific values",
+          "Pair technical terms with benefits"
+        ]
+      },
+      {
+        "location": "prosAndConsSection",
+        "keywords": "Feature keywords, comparison terms",
+        "guidelines": [
+          "Include key differentiating features",
+          "Use terminology buyers would search for",
+          "Frame limitations with standard terminology"
+        ]
+      },
+      {
+        "location": "verdictSummary",
+        "keywords": "Primary keywords, user-focused terms",
+        "guidelines": [
+          "Reinforce primary keywords",
+          "Include ideal use cases with relevant terms",
+          "Reference key benefits with targeted terminology"
+        ]
+      }
+    ]
+  },
+  "natural_integration_techniques": {
+    "description": "Methods for incorporating keywords naturally without affecting readability",
+    "techniques": [
+      {
+        "name": "contextualEnhancement",
+        "description": "Adding useful context around keywords",
+        "example_reference": "examples-templates.json > keyword_techniques > contextual_enhancement",
+        "implementation": "Add specific details that would help buyers understand the keyword in context"
+      },
+      {
+        "name": "variantUsage",
+        "description": "Using different forms of the same keyword",
+        "example_reference": "examples-templates.json > keyword_techniques > variant_usage",
+        "implementation": "Use different word forms, related terms, and natural variations"
+      },
+      {
+        "name": "experienceIntegration",
+        "description": "Embedding keywords within experience narratives",
+        "example_reference": "examples-templates.json > keyword_techniques > experience_integration",
+        "implementation": "Weave keywords into specific usage scenarios and authentic experiences"
+      },
+      {
+        "name": "comparativeFraming",
+        "description": "Using keywords within comparative statements",
+        "example_reference": "examples-templates.json > keyword_techniques > comparative_framing",
+        "implementation": "Include relevant comparison keywords within specific, detailed contrasts"
+      }
+    ]
+  },
+  "verification_framework": {
+    "description": "Process for ensuring effective keyword implementation",
+    "pre_submission_checks": [
+      {
+        "check": "keywordDistribution",
+        "method": "Verify that keywords appear throughout the review rather than being concentrated in one section",
+        "acceptance": "Keywords naturally distributed across at least 3 different sections"
+      },
+      {
+        "check": "keywordDensity",
+        "method": "Ensure primary keywords aren't overused",
+        "acceptance": "No more than 2-3 usages of the exact same keyword form"
+      },
+      {
+        "check": "naturalLanguageFlow",
+        "method": "Read sections with keywords aloud to verify they sound natural",
+        "acceptance": "No awkward phrasing or unnatural constructions"
+      },
+      {
+        "check": "valueContext",
+        "method": "Verify that keywords are surrounded by valuable information",
+        "acceptance": "Each keyword usage provides helpful context for buyers"
+      }
+    ]
+  },
+  "best_practices": [
+    "Use keyword variations and synonyms for natural flow",
+    "Provide helpful context around keywords",
+    "Incorporate keywords that potential buyers might search for",
+    "Avoid keyword stuffing or repetitive phrasing",
+    "Focus on creating value for human readers while incorporating search terms",
+    "Use specific product model numbers and technical specifications when relevant",
+    "Include comparative terms naturally within experience narratives",
+    "Balance search optimization with readability and authentic voice"
+  ],
+  "workflow_integration": {
+    "pre_writing_planning": {
+      "description": "During the Pre-Writing Planning phase of writing-process.json, ensure the following keyword-related tasks are completed",
+      "tasks": [
+        "Identify primary keywords based on product category and features",
+        "Identify secondary keywords related to benefits, usage, and comparisons",
+        "Plan keyword placement within the review structure (title, opening, body)",
+        "Consider keyword variations and long-tail keywords for natural integration"
+      ],
+      "reference": "writing-process.json > critical_pre_planning"
+    },
+    "content_creation": {
+      "description": "During the Content Creation phase of writing-process.json, ensure the following keyword-related tasks are completed",
+      "tasks": [
+        "Integrate primary keywords naturally into the title and opening",
+        "Weave secondary keywords into the body of the review",
+        "Use keyword variations to maintain natural flow and avoid repetition",
+        "Include long-tail keywords where appropriate to capture specific user searches"
+      ],
+      "reference": "writing-process.json > first_draft_success_framework"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://amazon-review-framework.com/schemas/review-strategy.schema.json",
+    "title": "Review Strategy",
+    "description": "Core principles and goals schema for Amazon Review Framework",
+    "type": "object",
+    "required": ["review_goal", "core_principles", "value_drivers"],
+    "properties": {
+      "review_goal": {
+        "type": "object",
+        "required": ["primary", "strategies"],
+        "properties": {
+          "primary": { "type": "string" },
+          "strategies": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+        }
+      },
+      "core_principles": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["principle", "description"],
+          "properties": {
+            "principle": { "type": "string" },
+            "description": { "type": "string" },
+            "implementation": { "type": "string" }
+          }
+        }
+      },
+      "value_drivers": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["driver", "description"],
+          "properties": {
+            "driver": { "type": "string" },
+            "description": { "type": "string" },
+            "implementation": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+          }
+        }
+      },
+      "success_metrics": {
+        "type": "object",
+        "properties": {
+          "quantitative": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["metric", "description"],
+              "properties": {
+                "metric": { "type": "string" },
+                "description": { "type": "string" },
+                "target": { "type": "string" }
+              }
+            }
+          },
+          "qualitative": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["metric", "description"],
+              "properties": {
+                "metric": { "type": "string" },
+                "description": { "type": "string" },
+                "assessment": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

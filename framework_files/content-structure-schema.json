@@ -1,0 +1,155 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://amazon-review-framework.com/schemas/content-structure.schema.json",
+  "title": "Content Structure",
+  "description": "Framework for organizing review content into logical, engaging structures",
+  "type": "object",
+  "required": ["review_structure", "section_naming", "content_organization"],
+  "properties": {
+    "review_structure": {
+      "type": "object",
+      "required": ["description", "core_elements"],
+      "properties": {
+        "description": { "type": "string" },
+        "core_elements": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "required", "description", "purpose"],
+            "properties": {
+              "name": { "type": "string" },
+              "required": { "type": "boolean" },
+              "description": { "type": "string" },
+              "purpose": { "type": "string" },
+              "keyword_implementation": { "type": "string" },
+              "guidelines": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+              "examples": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+              "usage_guidance": { "type": "string" }
+            }
+          }
+        },
+        "optional_custom_elements": {
+          "type": "object",
+          "properties": {
+            "description": { "type": "string" },
+            "guidance": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+            "example_categories": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+          }
+        }
+      }
+    },
+    "section_naming": {
+      "type": "object",
+      "required": ["description", "fundamental_principles", "formatting_standards"],
+      "properties": {
+        "description": { "type": "string" },
+        "fundamental_principles": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+        "formatting_standards": {
+          "type": "object",
+          "properties": {
+            "format": { "type": "string" },
+            "examples": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+            "implementation": { "type": "string" }
+          }
+        },
+        "section_name_options": {
+          "type": "object",
+          "properties": {
+            "experiential_sections": {
+              "type": "object",
+              "properties": {
+                "purpose": { "type": "string" },
+                "options": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+              }
+            },
+            "technical_sections": {
+              "type": "object",
+              "properties": {
+                "purpose": { "type": "string" },
+                "options": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+              }
+            },
+            "evaluation_sections": {
+              "type": "object",
+              "properties": {
+                "purpose": { "type": "string" },
+                "options": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+              }
+            },
+            "practical_sections": {
+              "type": "object",
+              "properties": {
+                "purpose": { "type": "string" },
+                "options": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+              }
+            },
+            "conclusion_sections": {
+              "type": "object",
+              "properties": {
+                "purpose": { "type": "string" },
+                "options": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "content_organization": {
+      "type": "object",
+      "required": ["description", "information_flow"],
+      "properties": {
+        "description": { "type": "string" },
+        "information_flow": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+        "formatting_guidance": {
+          "type": "object",
+          "properties": {
+            "paragraphs": { "type": "string" },
+            "lists_enhancement": {
+              "type": "object",
+              "properties": {
+                "principle": { "type": "string" },
+                "implementation": { "type": "string" },
+                "examples": {
+                  "type": "object",
+                  "properties": {
+                    "basic": { "type": "string" },
+                    "enhanced": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "redundancy_prevention": {
+          "type": "object",
+          "properties": {
+            "principles": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+            "reference": { "type": "string" },
+            "note": { "type": "string" },
+            "strategic_exceptions": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+          }
+        }
+      }
+    },
+    "product_specific_sections": {
+      "type": "object",
+      "properties": {
+        "description": { "type": "string" },
+        "adaptation_principles": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+        "section_adaptation_process": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "step": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "framework_relationships": {
+      "type": "array",
+      "items": { "$ref": "../common-definitions.schema.json#/definitions/componentReference" }
+    }
+  }
+}

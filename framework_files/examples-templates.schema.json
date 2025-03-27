@@ -1,0 +1,93 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://amazon-review-framework.com/schemas/examples-templates.schema.json",
+    "title": "Examples and Templates",
+    "description": "Implementation examples and templates for the Amazon Review Framework",
+    "type": "object",
+    "required": ["baseline_examples", "section_examples", "category_examples"],
+    "properties": {
+      "baseline_examples": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["title", "structure"],
+          "properties": {
+            "title": { "type": "string" },
+            "structure": {
+              "type": "object",
+              "properties": {
+                "opening_hook": { "type": "string" },
+                "daily_use": { "type": "string" },
+                "evaluation": { "type": "string" },
+                "audience_section": { "type": "string" },
+                "practical_notes": { "type": "string" },
+                "verdict": { "type": "string" }
+              }
+            }
+          }
+        }
+      },
+      "section_examples": {
+        "type": "object",
+        "properties": {
+          "opening_hooks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "category": { "type": "string" },
+                "example": { "type": "string" },
+                "analysis": { "type": "string" }
+              }
+            }
+          },
+          "evaluation_sections": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "category": { "type": "string" },
+                "example": { "type": "string" },
+                "analysis": { "type": "string" }
+              }
+            }
+          },
+          "verdict_sections": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "category": { "type": "string" },
+                "example": { "type": "string" },
+                "analysis": { "type": "string" }
+              }
+            }
+          }
+        }
+      },
+      "category_examples": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "category": { "type": "string" },
+            "sample_review": { "type": "string" },
+            "key_elements": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+            "adaptation_guidance": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+          }
+        }
+      },
+      "improvement_examples": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "aspect": { "type": "string" },
+            "before": { "type": "string" },
+            "after": { "type": "string" },
+            "improvement_principles": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+          }
+        }
+      }
+    }
+  }

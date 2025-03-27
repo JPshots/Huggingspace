@@ -1,0 +1,129 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://amazon-review-framework.com/schemas/thematic-frameworks.schema.json",
+    "title": "Thematic Frameworks",
+    "description": "A comprehensive system for developing and implementing consistent themes throughout reviews",
+    "type": "object",
+    "required": ["creative_vision", "theme_discovery", "thematic_options"],
+    "properties": {
+      "creative_vision": {
+        "type": "object",
+        "required": ["description", "principles", "idea_generation"],
+        "properties": {
+          "description": { "type": "string" },
+          "principles": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+          "idea_generation": {
+            "type": "object",
+            "properties": {
+              "cross_domain_mapping": {
+                "type": "object",
+                "properties": {
+                  "description": { "type": "string" },
+                  "prompts": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+                  "example": {
+                    "type": "object",
+                    "properties": {
+                      "product": { "type": "string" },
+                      "connection": { "type": "string" },
+                      "thematic_potential": { "type": "string" }
+                    }
+                  }
+                }
+              },
+              "personal_expertise_transfer": {
+                "type": "object",
+                "properties": {
+                  "description": { "type": "string" },
+                  "prompts": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+                  "example": {
+                    "type": "object",
+                    "properties": {
+                      "product": { "type": "string" },
+                      "expertise": { "type": "string" },
+                      "thematic_potential": { "type": "string" }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "theme_discovery": {
+        "type": "object",
+        "properties": {
+          "description": { "type": "string" },
+          "principles": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+          "process": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+          "generative_questions": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+        }
+      },
+      "thematic_options": {
+        "type": "object",
+        "properties": {
+          "description": { "type": "string" },
+          "options": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": { "type": "string" },
+                "description": { "type": "string" },
+                "example": { "type": "string" },
+                "product_fit": { "type": "string" }
+              }
+            }
+          },
+          "themed_section_frameworks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "theme": { "type": "string" },
+                "description": { "type": "string" },
+                "section_headers": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "original": { "type": "string" },
+                      "themed": { "type": "string" }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "theme_generation_questions": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" }
+        }
+      },
+      "thematic_anchor_points": {
+        "type": "object",
+        "properties": {
+          "description": { "type": "string" },
+          "anchor_points": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": { "type": "string" },
+                "purpose": { "type": "string" },
+                "implementation": { "$ref": "../common-definitions.schema.json#/definitions/stringArray" },
+                "example": {
+                  "type": "object",
+                  "properties": {
+                    "theme": { "type": "string" },
+                    "implementation": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "framework_relationships": {
+        "type": "array",
+        "items": { "$ref": "../common-definitions.schema.json#/definitions/componentReference" }
+      }
+    }
+  }
